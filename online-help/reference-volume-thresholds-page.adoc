@@ -1,0 +1,212 @@
+---
+permalink: online-help/reference-volume-thresholds-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Volume Thresholds (soglie volume) consente di configurare i valori globali delle soglie di integrità per i volumi monitorati. È possibile impostare soglie per singoli volumi o per tutti i volumi a livello globale. Quando si configurano le opzioni a livello globale, i valori predefiniti di tutti gli oggetti vengono modificati. Tuttavia, se i valori predefiniti sono stati modificati a livello di oggetto, i valori globali non vengono modificati.' 
+---
+= Pagina delle soglie dei volumi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Volume Thresholds (soglie volume) consente di configurare i valori globali delle soglie di integrità per i volumi monitorati. È possibile impostare soglie per singoli volumi o per tutti i volumi a livello globale. Quando si configurano le opzioni a livello globale, i valori predefiniti di tutti gli oggetti vengono modificati. Tuttavia, se i valori predefiniti sono stati modificati a livello di oggetto, i valori globali non vengono modificati.
+
+È necessario disporre del ruolo di amministratore dell'applicazione o di amministratore dello storage.
+
+Gli eventi vengono generati in caso di superamento di una soglia. È possibile intraprendere azioni correttive per tali eventi.
+
+È possibile impostare soglie per: Capacità, copie Snapshot del volume, quote qtree, crescita del volume e inode.
+
+
+
+== Area di capacità
+
+L'area Capacity (capacità) consente di impostare le seguenti condizioni di soglia della capacità del volume. Si noti che quando la funzione di crescita automatica è attivata su un volume, le soglie di capacità vengono considerate violate in base alle dimensioni massime del volume impostate dalla crescita automatica, non in base alle dimensioni originali del volume.
+
+* *Spazio quasi pieno*
++
+Specifica la percentuale in cui un volume viene considerato quasi pieno:
+
++
+** Valore predefinito: 80 percento
++
+Il valore di questa soglia deve essere inferiore al valore della soglia Volume Full per consentire al server di gestione di generare un evento.
+
+** Evento generato: Volume quasi pieno
+** Severità dell'evento: Avviso
+
+
+* *Spazio pieno*
++
+Specifica la percentuale in cui un volume viene considerato pieno:
+
++
+** Valore predefinito: 90 percento
+** Evento generato: Volume pieno
+** Severità evento: Errore
+
+
+* *Giorni fino al completo*
++
+Specifica il numero di giorni rimanenti prima che il volume raggiunga la capacità massima:
+
++
+** Valore predefinito: 15 (anche questo è il valore minimo)
+** Evento generato: Volume Days until Full (giorni di volume fino al pieno)
+** Severità evento: Errore
+
+
+
+
+
+
+== Area delle copie Snapshot
+
+L'area copie Snapshot consente di impostare le seguenti condizioni di soglia per le copie Snapshot nel volume:
+
+* *Snapshot Reserve Full*
++
+Specifica la percentuale in cui lo spazio riservato per le copie Snapshot viene considerato pieno:
+
++
+** Valore predefinito: 90 percento
+** Evento generato: Riserva snapshot volume piena
+** Severità evento: Errore
+
+
+* *Giorni fino al completo*
++
+Specifica il numero di giorni rimanenti prima che lo spazio riservato per le copie Snapshot raggiunga la capacità massima:
+
++
+** Valore predefinito: 7
+** Evento generato: Volume Snapshot Reserve Days until Full (giorni riserva snapshot volume fino al pieno)
+** Severità evento: Errore
+
+
+* *Conteggio*
++
+Specifica il numero di copie Snapshot di un volume considerate troppe:
+
++
+** Valore predefinito: 1000
+** Evento generato: Troppe copie Snapshot
+** Severità evento: Errore il numero di copie Snapshot considerate massime per volume prima che Unified Manager attivi un evento è inferiore al numero massimo di ONTAP:
+
+
+
+
+[cols="3*"]
+|===
+|  | ONTAP massimo | Massimo di Unified Manager 
+
+
+ a| 
+Volumi FlexVol con ONTAP 9.3 o versione precedente e volumi FlexGroup con ONTAP 9.7 o versione precedente
+ a| 
+255
+ a| 
+250
+
+
+
+ a| 
+Volumi FlexVol con ONTAP 9.4 o superiore e volumi FlexGroup con ONTAP 9.8 o superiore
+ a| 
+1023
+ a| 
+1000
+
+|===
+
+
+== Area di quota del qtree
+
+L'area di quota Qtree consente di impostare le seguenti condizioni di soglia della quota di volume:
+
+* *Quasi impegnato*
++
+Specifica la percentuale in cui un volume viene considerato quasi overcommit dalle quote qtree:
+
++
+** Valore predefinito: 95 percento
+** Evento generato: Quota Qtree del volume quasi sovrascrittura
+** Severità dell'evento: Avviso
+
+
+* *Impegnato in eccesso*
++
+Specifica la percentuale in cui un volume viene considerato come overcommit dalle quote qtree:
+
++
+** Valore predefinito: 100 percento
+** Evento generato: Quota Qtree volume sovrascrittura
+** Severità evento: Errore
+
+
+
+
+
+
+== Area di crescita
+
+L'area di crescita consente di impostare le seguenti condizioni di soglia per la crescita del volume:
+
+* *Tasso di crescita*
++
+Specifica la percentuale in cui il tasso di crescita di un volume viene considerato normale prima che il sistema generi un evento anomalo di Volume Growth Rate:
+
++
+** Valore predefinito: 1 percento
+** Evento generato: Tasso di crescita del volume anomalo
+** Severità dell'evento: Avviso
+
+
+* *Growth Rate Sensitivity*
++
+Specifica il fattore applicato alla deviazione standard del tasso di crescita di un volume. Se il tasso di crescita supera la deviazione standard fattorizzata, viene generato un evento anomalo di Volume Growth Rate.
+
++
+Un valore inferiore per la sensibilità del tasso di crescita indica che il volume è altamente sensibile alle variazioni del tasso di crescita. L'intervallo per la sensibilità del tasso di crescita è compreso tra 1 e 5.
+
++
+** Valore predefinito: 2
+
+
++
+[NOTE]
+====
+Se si modifica la sensibilità del tasso di crescita per i volumi al livello di soglia globale, la modifica viene applicata anche alla sensibilità del tasso di crescita per gli aggregati al livello di soglia globale.
+
+====
+
+
+
+
+== Area degli inode
+
+L'area nodi consente di impostare le seguenti condizioni di soglia per gli inode:
+
+* *Quasi pieno*
++
+Specifica la percentuale in cui un volume viene considerato avere consumato la maggior parte degli inode:
+
++
+** Valore predefinito: 80 percento
+** Evento generato: Inode quasi pieno
+** Severità dell'evento: Avviso
+
+
+* *Completo*
++
+Specifica la percentuale in cui un volume viene considerato avere consumato tutti i suoi inode:
+
++
+** Valore predefinito: 90 percento
+** Evento generato: Inodes Full
+** Severità evento: Errore
+
+
+

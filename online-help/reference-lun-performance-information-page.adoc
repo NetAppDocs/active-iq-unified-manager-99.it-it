@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-lun-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Utilizzare la pagina LUN/Performance Information per visualizzare un elenco degli attributi fisici e logici del LUN. Queste informazioni potrebbero essere utili per rispondere alle domande relative alle performance. 
+---
+= Pagina LUN/informazioni sulle prestazioni
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilizzare la pagina LUN/Performance Information per visualizzare un elenco degli attributi fisici e logici del LUN. Queste informazioni potrebbero essere utili per rispondere alle domande relative alle performance.
+
+
+
+== Attributi del LUN
+
+* *WWN*
++
+Il WWN (World Wide Name) del LUN.
+
+* *Percorso*
++
+Il percorso completo del LUN, ad esempio `/vol/vol1/lun1`.
+
+* *Allineamento*
++
+Indica lo stato di allineamento del LUN. Valori possibili:
+
++
+** Non mappato
+** Allineato
+** Disallineato
+** Possibile disallineamento
+** Indeterminato
+
+
+* *Capacità (libera/totale)*
++
+Lo storage totale disponibile sul LUN, in gigabyte, e la quantità di storage attualmente disponibile.
+
+* *Volume*
++
+Il nome del volume a cui appartiene il LUN. È possibile fare clic sul nome per visualizzare i dettagli del volume nella pagina Volume/Performance Explorer (Esplora volume/prestazioni).
+
+* *Storage VM*
++
+Il nome della SVM a cui appartiene il LUN. È possibile fare clic sul nome per visualizzare i dettagli SVM nella pagina Storage VM/Performance Explorer.
+
+* Nodo *
++
+Il nome del nodo su cui risiede il LUN. È possibile fare clic sul nome per visualizzare i dettagli del nodo nella pagina Node/Performance Explorer (Esplora nodi/prestazioni).
+
+* *Cluster*
++
+Il nome del cluster a cui appartiene il LUN. È possibile fare clic sul nome per visualizzare i dettagli del cluster nella pagina Cluster/Performance Explorer.
+
+* *Stato*
++
+Lo stato del LUN. gli stati validi possono essere online, offline, nvfail, space-error e foreign-lun-error.
+
+* *Mappato*
++
+Se il LUN è mappato a un gruppo iniziatore (true) o meno (false).
+
+

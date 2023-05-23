@@ -1,0 +1,146 @@
+---
+permalink: online-help/reference-aggregate-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: I seguenti campi sono disponibili nel report aggregato capacità e utilizzo e possono essere utilizzati nelle visualizzazioni personalizzate e nei report. 
+---
+= Aggregare i campi di capacità
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I seguenti campi sono disponibili nel report aggregato capacità e utilizzo e possono essere utilizzati nelle visualizzazioni personalizzate e nei report.
+
+* *Aggregato*
++
+Il nome dell'aggregato.
+
+* *Tasso di crescita giornaliero %*
++
+Il tasso di crescita che si verifica ogni 24 ore nell'aggregato.
+
+* *Giorni fino al completo*
++
+Il numero stimato di giorni rimanenti prima che l'aggregato raggiunga la capacità completa.
+
+* *Capacità in eccesso %*
++
+L'overcommitment aggregato in percentuale.
+
+* *Dati disponibili %*
++
+La capacità dei dati disponibile in percentuale.
+
+* *Capacità dati disponibile*
++
+La capacità dei dati disponibile.
+
+* *Dati utilizzati %*
++
+La capacità dei dati utilizzata in percentuale.
+
+* *Capacità dati utilizzata*
++
+La capacità dei dati utilizzata.
+
+* *Capacità totale dei dati*
++
+La capacità totale dei dati (utilizzata più disponibile).
+
+* *Spazio logico utilizzato*
++
+La dimensione reale dei dati memorizzati nell'aggregato senza applicare i risparmi derivanti dall'utilizzo delle tecnologie di efficienza dello storage ONTAP.
+
+* *Riserva Snapshot disponibile %*
++
+La quantità di spazio disponibile per le copie Snapshot in percentuale.
+
+* *Snapshot Reserve Available Capacity (capacità disponibile riserva snapshot)*
++
+La quantità di spazio disponibile per le copie Snapshot.
+
+* *Snapshot Reserve used %*
++
+La quantità di spazio utilizzata dalle copie Snapshot dalla riserva di snapshot in percentuale.
+
+* *Capacità utilizzata riserva Snapshot*
++
+La quantità di spazio utilizzata dalle copie Snapshot dalla riserva di Snapshot.
+
+* *Capacità totale riserva Snapshot*
++
+La capacità totale di riserva di snapshot dell'aggregato.
+
+* *Cloud Tier Space utilizzato*
++
+La quantità di capacità dei dati attualmente utilizzata nel Tier cloud.
+
+* *Tier cloud*
++
+Il nome dell'archivio di oggetti del livello cloud quando è stato creato da ONTAP.
+
+* *Stato*
++
+Lo stato corrente dell'aggregato.
+
+* *Tipo*
++
+Il tipo di aggregato:
+
++
+** DISCO RIGIDO
+** Ibrido
++
+Combina HDD e SSD, ma Flash Pool non è stato attivato.
+
+** Ibrido (Flash Pool)
++
+Combina HDD e SSD ed è stato attivato Flash Pool.
+
+** SSD
+** SSD (FabricPool)
++
+Combina SSD e un Tier cloud
+
+** Disco rigido (FabricPool)
++
+Combina HDD e un Tier cloud
+
+** VMDisk (SDS)
++
+Dischi virtuali all'interno di una macchina virtuale
+
+** VMDisk (FabricPool)
++
+Combina dischi virtuali e un Tier cloud
+
+** LUN (FlexArray)
+
+
+* *Tipo RAID*
++
+Il tipo di configurazione RAID.
+
+* *Tipo SnapLock*
++
+Il tipo di SnapLock aggregato. I valori possibili sono Compliance, Enterprise, non SnapLock.
+
+* *Coppia ha*
++
+Il valore di coppia ha ottenuto formando due nodi.
+
+* Nodo *
++
+Il nome del nodo che contiene l'aggregato.
+
+* *Cluster*
++
+Il nome del cluster. È possibile fare clic sul nome del cluster per accedere alla pagina dei dettagli sulla capacità del cluster.
+
+* *FQDN cluster*
++
+Il nome di dominio completo (FQDN) del cluster.
+
+

@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-viewing-high-level-cluster-security-status.html 
+sidebar: sidebar 
+keywords: cluster security status,SVM security status 
+summary: 'Il pannello Security (sicurezza) di Unified Manager Dashboard mostra lo stato di sicurezza di alto livello per tutti i cluster o per un singolo cluster, a seconda della vista corrente.' 
+---
+= Visualizzazione dello stato di sicurezza del cluster di alto livello
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il pannello Security (sicurezza) di Unified ManagerDashboard mostra lo stato di sicurezza di alto livello per tutti i cluster o per un singolo cluster, a seconda della vista corrente.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Dashboard*.
+. A seconda che si desideri visualizzare lo stato di sicurezza per tutti i cluster monitorati o per un singolo cluster, selezionare *tutti i cluster* o selezionare un singolo cluster dal menu a discesa.
+. Visualizzare il pannello *Security* per visualizzare lo stato generale.
++
+Questo pannello visualizza:
+
++
+** un elenco degli eventi di sicurezza ricevuti nelle ultime 24 ore
+** Un link da ciascuno di questi eventi alla pagina dei dettagli dell'evento
+** Un collegamento che consente di visualizzare tutti gli eventi di sicurezza attivi nella pagina dell'inventario di gestione degli eventi
+** lo stato di sicurezza del cluster (numero di cluster conformi o non conformi)
+** Lo stato di sicurezza SVM (numero di SVM conformi o non conformi)
+** lo stato di crittografia del volume (numero di volumi crittografati o non crittografati)
+
+
+. Fare clic sulla freccia destra nella parte superiore del pannello per visualizzare i dettagli relativi alla sicurezza nella pagina *sicurezza*.
+

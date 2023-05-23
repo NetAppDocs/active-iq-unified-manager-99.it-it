@@ -1,0 +1,49 @@
+---
+permalink: online-help/reference-qtree-thresholds-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Qtree Thresholds (soglie Qtree) consente di configurare i valori di soglia della capacità globale per i qtree monitorati. Gli eventi vengono generati per un qtree solo quando è stata impostata una quota Qtree o una quota predefinita nel qtree. Gli eventi non vengono generati se lo spazio definito in una quota utente o di gruppo ha superato la soglia.' 
+---
+= Pagina delle soglie del qtree
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Qtree Thresholds (soglie Qtree) consente di configurare i valori di soglia della capacità globale per i qtree monitorati. Gli eventi vengono generati per un qtree solo quando è stata impostata una quota Qtree o una quota predefinita nel qtree. Gli eventi non vengono generati se lo spazio definito in una quota utente o di gruppo ha superato la soglia.
+
+È necessario disporre del ruolo di amministratore dell'applicazione o di amministratore dello storage.
+
+Gli eventi vengono generati in caso di superamento di una soglia. È possibile intraprendere azioni correttive per tali eventi.
+
+
+
+== Area di capacità
+
+L'area Capacity (capacità) consente di impostare le seguenti condizioni di soglia della capacità del qtree.
+
+* *Spazio quasi pieno*
++
+Specifica la percentuale in cui un qtree viene considerato quasi pieno:
+
++
+** Valore predefinito: 80 percento
++
+Il valore di questa soglia deve essere inferiore al valore della soglia Qtree Full.
+
+** Evento generato: Qtree quasi pieno
+** Severità dell'evento: Avviso
+
+
+* *Spazio pieno*
++
+Specifica la percentuale in cui un qtree viene considerato pieno:
+
++
+** Valore predefinito: 90 percento
+** Evento generato: Qtree Full
+** Severità evento: Errore
+
+
+

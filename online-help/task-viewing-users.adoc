@@ -1,0 +1,27 @@
+---
+permalink: online-help/task-viewing-users.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la pagina utenti per visualizzare l"elenco degli utenti che gestiscono gli oggetti e i dati di storage utilizzando Unified Manager. È possibile visualizzare i dettagli relativi agli utenti, ad esempio il nome utente, il tipo di utente, l"indirizzo e-mail e il ruolo assegnato agli utenti.' 
+---
+= Visualizzazione degli utenti
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la pagina utenti per visualizzare l'elenco degli utenti che gestiscono gli oggetti e i dati di storage utilizzando Unified Manager. È possibile visualizzare i dettagli relativi agli utenti, ad esempio il nome utente, il tipo di utente, l'indirizzo e-mail e il ruolo assegnato agli utenti.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dell'applicazione.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Generale* > *utenti*.
+

@@ -1,0 +1,20 @@
+---
+permalink: online-help/reference-capacity-all-volumes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vista Capacity: All Volumes (capacità: Tutti i volumi) consente di visualizzare informazioni sulla capacità e sull"utilizzo dei volumi in un cluster. Queste informazioni consentono di comprendere i possibili rischi di capacità e di visualizzare la capacità dei volumi configurata, utilizzata e inutilizzata. Inoltre, le informazioni consentono di prendere decisioni sull"attivazione di funzionalità per il risparmio di spazio, come deduplica e thin provisioning.' 
+---
+= Capacity (capacità): Vista di tutti i volumi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista Capacity: All Volumes (capacità: Tutti i volumi) consente di visualizzare informazioni sulla capacità e sull'utilizzo dei volumi in un cluster. Queste informazioni consentono di comprendere i possibili rischi di capacità e di visualizzare la capacità dei volumi configurata, utilizzata e inutilizzata. Inoltre, le informazioni consentono di prendere decisioni sull'attivazione di funzionalità per il risparmio di spazio, come deduplica e thin provisioning.
+
+I controlli nella parte superiore della pagina consentono di selezionare una vista particolare (per lo stato, le prestazioni, la capacità e così via), eseguire ricerche per individuare oggetti specifici, creare e applicare filtri per restringere l'elenco dei dati visualizzati, aggiungere/rimuovere/riordinare le colonne della pagina, ed esportare i dati della pagina in un `.csv`, `.pdf`, o. `.xlsx` file. Dopo aver personalizzato la pagina, è possibile salvare i risultati come vista personalizzata e pianificare un report dei dati da generare e inviare via email a intervalli regolari.
+
+Se si desidera analizzare la latenza e il throughput di un oggetto specifico, fare clic sull'icona Altro image:../media/more-icon.gif[""], Quindi *Analyze workload* ed è possibile visualizzare i grafici relativi a performance e capacità nella pagina workload Analysis.
+
+Vedere xref:reference-volume-capacity-fields.adoc[Campi relativi alla capacità del volume] per la descrizione di tutti i campi di questa pagina.

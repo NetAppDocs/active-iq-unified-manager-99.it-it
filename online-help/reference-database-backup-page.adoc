@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-database-backup-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Database Backup (Backup database) visualizza un elenco di backup creati da Unified Manager e fornisce informazioni sul nome, le dimensioni e il tempo di creazione del backup.' 
+---
+= Pagina di backup del database
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Database Backup (Backup database) visualizza un elenco di backup creati da Unified Manager e fornisce informazioni sul nome, le dimensioni e il tempo di creazione del backup.
+
+È necessario disporre del ruolo di amministratore dell'applicazione o di amministratore dello storage.
+
+
+
+== Vista elenco
+
+La vista elenco visualizza informazioni sui file di backup disponibili.
+
+* *Nome*
++
+Nome del backup.
+
+* *Dimensione*
++
+Dimensione del backup.
+
+* *Tempo di creazione*
++
+Data e ora di creazione del backup.
+
+
+
+
+
+== Pulsanti di comando
+
+* *Impostazioni di backup*
++
+Visualizza la finestra di dialogo Backup Settings (Impostazioni di backup), che consente di specificare un percorso di backup, un numero di conservazione e una pianificazione di backup.
+
+

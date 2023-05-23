@@ -1,0 +1,34 @@
+---
+permalink: health-checker/task-viewing-all-security-events.html 
+sidebar: sidebar 
+keywords: view security events 
+summary: È possibile visualizzare tutti gli eventi di protezione attivi e assegnarli a un utente in grado di risolvere il problema. Inoltre, se alcuni eventi di protezione non si desidera ricevere, questo elenco può aiutare a identificare gli eventi che si desidera disattivare. 
+---
+= Visualizzazione di tutti gli eventi di sicurezza attivi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare tutti gli eventi di protezione attivi e assegnarli a un utente in grado di risolvere il problema. Inoltre, se alcuni eventi di protezione non si desidera ricevere, questo elenco può aiutare a identificare gli eventi che si desidera disattivare.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore dell'applicazione o amministratore dello storage.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Gestione eventi*.
++
+Per impostazione predefinita, gli eventi nuovi e confermati vengono visualizzati nella pagina di inventario Gestione eventi.
+
+. Dal menu View (Visualizza), selezionare *Active Security events* (Eventi di sicurezza attivi).
++
+La pagina visualizza tutti gli eventi New e Acknowledged Security generati negli ultimi 7 giorni.
+
+

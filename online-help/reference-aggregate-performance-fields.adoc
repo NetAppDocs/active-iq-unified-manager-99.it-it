@@ -1,0 +1,113 @@
+---
+permalink: online-help/reference-aggregate-performance-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'I seguenti campi sono disponibili nella vista Performance: All aggregates (prestazioni: Tutti gli aggregati) e possono essere utilizzati nelle viste personalizzate e nei report.' 
+---
+= Aggregare i campi delle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I seguenti campi sono disponibili nella vista Performance: All aggregates (prestazioni: Tutti gli aggregati) e possono essere utilizzati nelle viste personalizzate e nei report.
+
+* *Stato*
++
+Un oggetto integro senza eventi attivi visualizza un'icona con un segno di spunta verde (image:../media/sev-normal-um60.png["Icona per la severità dell'evento – normale"]). Se l'oggetto ha un evento attivo, l'icona dell'indicatore di evento identifica la severità dell'evento: Gli eventi critici sono rossi (image:../media/sev-critical-um60.png["Icona per la severità dell'evento – critico"]), gli eventi di errore sono di colore arancione (image:../media/sev-error-um60.png["Icona per la severità dell'evento – errore"]) e gli eventi di avviso sono gialli (image:../media/sev-warning-um60.png["Icona per la severità dell'evento – avviso"]).
+
+* *Aggregato*
++
+È possibile fare clic sul nome dell'aggregato per accedere alla pagina dei dettagli sulle prestazioni dell'aggregato.
+
+* *Tipo*
++
+Il tipo di aggregato:
+
++
+** DISCO RIGIDO
+** Ibrido
++
+Combina HDD e SSD, ma Flash Pool non è stato attivato.
+
+** Ibrido (Flash Pool)
++
+Combina HDD e SSD ed è stato attivato Flash Pool.
+
+** SSD
+** SSD (FabricPool)
++
+Combina SSD e un Tier cloud
+
+** Disco rigido (FabricPool)
++
+Combina HDD e un Tier cloud
+
+** VMDisk (SDS)
++
+Dischi virtuali all'interno di una macchina virtuale
+
+** VMDisk (FabricPool)
++
+Combina dischi virtuali e un Tier cloud
+
+** LUN (FlexArray)
+
+
+* *Latenza*
++
+Il tempo di risposta medio per tutte le richieste di i/o nell'aggregato, espresso in millisecondi per operazione.
+
+* *IOPS*
++
+Le operazioni di input/output al secondo sull'aggregato.
+
+* *MB/s*
++
+Il throughput sull'aggregato, misurato in megabyte al secondo.
+
+* *Capacità di performance utilizzata*
++
+La percentuale di capacità di performance utilizzata dall'aggregato.
+
+* *Utilizzo*
++
+La percentuale di dischi dell'aggregato attualmente in uso.
+
+* *IOPS disponibili*
++
+Il numero di operazioni di input/output al secondo attualmente disponibili (gratuite) su questo aggregato per carichi di lavoro aggiuntivi.
+
+* *Capacità libera*
++
+La capacità di storage inutilizzata per questo aggregato, in gigabyte.
+
+* *Capacità totale*
++
+La capacità di storage totale per questo aggregato, in gigabyte.
+
+* *Inactive Data Reporting*
++
+Se la funzionalità di reporting dei dati inattivi è attivata o disattivata su questo aggregato. Quando questa opzione è attivata, i volumi di questo aggregato visualizzano la quantità di dati cold nella vista Performance: All Volumes (prestazioni: Tutti i volumi).
+
++
+Il valore in questo campo è "`N/A`" quando la versione di ONTAP non supporta il reporting dei dati inattivi.
+
+* *Cluster*
++
+Il cluster a cui appartiene l'aggregato. È possibile fare clic sul nome del cluster per accedere alla pagina dei dettagli del cluster.
+
+* *FQDN cluster*
++
+Il nome di dominio completo (FQDN) del cluster.
+
+* Nodo *
++
+Nodo a cui appartiene l'aggregato. È possibile fare clic sul nome del nodo per accedere alla pagina dei dettagli del nodo.
+
+* *Criterio di soglia*
++
+I criteri o i criteri di soglia delle performance definiti dall'utente che sono attivi su questo oggetto di storage. È possibile posizionare il cursore sui nomi dei criteri contenenti i puntini di sospensione (...) per visualizzare il nome completo del criterio o l'elenco dei nomi dei criteri assegnati. I pulsanti *Assign Performance Threshold Policy* e *Clear Performance Threshold Policy* rimangono disattivati finché non si selezionano uno o più oggetti facendo clic sulle caselle di controllo situate all'estrema sinistra.
+
+

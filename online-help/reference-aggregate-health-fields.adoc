@@ -1,0 +1,257 @@
+---
+permalink: online-help/reference-aggregate-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'I seguenti campi sono disponibili nella vista Health: All aggregates (Salute: Tutti gli aggregati) e possono essere utilizzati nelle viste personalizzate e nei report.' 
+---
+= Aggregare i campi sanitari
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I seguenti campi sono disponibili nella vista Health: All aggregates (Salute: Tutti gli aggregati) e possono essere utilizzati nelle viste personalizzate e nei report.
+
+* *Stato*
++
+Lo stato corrente dell'aggregato. Lo stato può essere critico (image:../media/sev-critical-um60.png["Icona per la severità dell'evento – critico"]), errore (image:../media/sev-error-um60.png["Icona per la severità dell'evento – errore"]), Avviso (image:../media/sev-warning-um60.png["Icona per la severità dell'evento – avviso"]), o normale (image:../media/sev-normal-um60.png["Icona per la severità dell'evento – normale"]).
+
+* *Aggregato*
++
+Il nome dell'aggregato.
+
+* *Stato*
++
+Lo stato corrente dell'aggregato:
+
++
+** Offline
++
+Non è consentito l'accesso in lettura o scrittura.
+
+** Online
++
+È consentito l'accesso in lettura e scrittura ai volumi ospitati su questo aggregato.
+
+** Limitato
++
+Sono consentite operazioni limitate, come la ricostruzione della parità, ma non è consentito l'accesso ai dati.
+
+** Creazione in corso
++
+L'aggregato è in fase di creazione.
+
+** Distruggere
++
+L'aggregato viene distrutto.
+
+** Non riuscito
++
+L'aggregato non può essere portato online.
+
+** Congelato
++
+L'aggregato (temporaneamente) non fornisce richieste.
+
+** Incoerente
++
+L'aggregato è stato contrassegnato come corrotto; contattare il supporto tecnico.
+
+** Ferro limitato
++
+Gli strumenti di diagnostica non possono essere eseguiti sull'aggregato.
+
+** Montaggio
++
+L'aggregato è in fase di montaggio.
+
+** Parziale
++
+È stato trovato almeno un disco per l'aggregato, ma mancano due o più dischi.
+
+** A Quiesced
++
+L'aggregato viene messo a punto.
+
+** Quiescing
++
+L'aggregato viene messo a punto.
+
+** Invertito
++
+L'operazione di revert dell'aggregato è stata completata.
+
+** Non montato
++
+L'aggregato non è in linea.
+
+** Smontaggio
++
+L'aggregato viene portato offline.
+
+** Sconosciuto
++
+Specifica che l'aggregato viene rilevato, ma le informazioni aggregate non vengono ancora recuperate dal server Unified Manager.
+
+
+
+* Nodo *
++
+Il nome del nodo che contiene l'aggregato.
+
+* *Stato mirror*
++
+Lo stato mirror dell'aggregato:
+
++
+** Mirrorato
++
+I dati aggregati plex vengono mirrorati.
+
+** Mirror degradato
++
+I dati aggregati plex non possono essere mirrorati.
+
+** Risincronizzazione del mirror
++
+Viene eseguito il mirroring dei dati aggregati plex.
+
+** Non riuscito
++
+Il mirroring dei dati aggregato plex non è riuscito.
+
+** Configurazione non valida
++
+Lo stato iniziale prima della creazione di un aggregato.
+
+** Non inizializzato
++
+L'aggregato è in fase di creazione.
+
+** Senza mirror
++
+L'aggregato non viene mirrorato.
+
+** Controllo del conteggio CP in corso
++
+L'aggregato è stato assimilato e Unified Manager sta convalidando che i conteggi CP per i plessi sono simili.
+
+** Limbo
++
+Si è verificato un problema con le etichette aggregate. Il sistema ONTAP identifica l'aggregato ma non può assimilarlo con precisione.
+
+** Richiede il controllo del conteggio CP
++
+L'aggregato viene assimilato, ma i conteggi CP su entrambi i plessi non sono ancora validati per essere simili.
+
+
+
++
+Quando un aggregato si trova nello stato mirror_resincronizing, viene visualizzata anche la percentuale di risincronizzazione.
+
+* *In transizione*
++
+Se l'aggregato ha completato o meno la transizione.
+
+* *Tipo*
++
+Il tipo di aggregato:
+
++
+** DISCO RIGIDO
+** Ibrido
++
+Combina HDD e SSD, ma Flash Pool non è stato attivato.
+
+** Ibrido (Flash Pool)
++
+Combina HDD e SSD ed è stato attivato Flash Pool.
+
+** SSD
+** SSD (FabricPool)
++
+Combina SSD e un Tier cloud
+
+** Disco rigido (FabricPool)
++
+Combina HDD e un Tier cloud
+
+** VMDisk (SDS)
++
+Dischi virtuali all'interno di una macchina virtuale
+
+** VMDisk (FabricPool)
++
+Combina dischi virtuali e un Tier cloud
+
+** LUN (FlexArray)
+
+
+* *Tipo SnapLock*
++
+Il tipo di SnapLock aggregato. I valori possibili sono Compliance, Enterprise, non SnapLock.
+
+* *Dati utilizzati %*
++
+La percentuale di spazio utilizzata per i dati nell'aggregato.
+
+* *Dati disponibili %*
++
+La percentuale di spazio disponibile per i dati nell'aggregato.
+
+* *Capacità dati utilizzata*
++
+La quantità di spazio utilizzata per i dati nell'aggregato.
+
+* *Capacità dati disponibile*
++
+La quantità di spazio disponibile per i dati nell'aggregato.
+
+* *Capacità totale dei dati*
++
+La dimensione totale dei dati dell'aggregato.
+
+* *Capacità impegnata*
++
+Lo spazio totale impegnato per tutti i volumi nell'aggregato.
+
++
+Quando la funzione di crescita automatica è attivata sui volumi che risiedono nell'aggregato, la capacità impegnata si basa sulle dimensioni massime del volume impostate dalla funzione di crescita automatica, non sulla dimensione originale del volume. Per gli aggregati FabricPool, questo valore è rilevante solo per la capacità locale o di livello di performance. La quantità di spazio disponibile nel Tier cloud non viene riflessa in questo valore.
+
+* *Spazio logico utilizzato*
++
+La dimensione reale dei dati memorizzati nell'aggregato senza applicare i risparmi derivanti dall'utilizzo delle tecnologie di efficienza dello storage ONTAP.
+
+* *Risparmio di spazio*
++
+Il rapporto di efficienza dello storage basato sullo spazio logico totale utilizzato per memorizzare i dati e sullo spazio fisico totale necessario per memorizzare i dati senza utilizzare le tecnologie di efficienza dello storage ONTAP.
+
++
+Questo campo viene compilato solo per gli aggregati non root.
+
+* *Cloud Tier Space utilizzato*
++
+La quantità di spazio utilizzata nel Tier cloud, se l'aggregato è un aggregato FabricPool.
+
+* *Tipo RAID*
++
+Il tipo di configurazione RAID:
+
++
+** RAID 0: Tutti i gruppi RAID sono di tipo RAID 0.
+** RAID 4: Tutti i gruppi RAID sono di tipo RAID 4.
+** RAID-DP: Tutti i gruppi RAID sono di tipo RAID-DP.
+** RAID-TEC: Tutti i gruppi RAID sono di tipo RAID-TEC.
+** RAID misto: L'aggregato contiene gruppi RAID di diversi tipi RAID (RAID 0, RAID 4, RAID-DP e RAID-TEC).
+
+
+* *Cluster*
++
+Il nome del cluster in cui risiede l'aggregato. È possibile fare clic sul nome del cluster per accedere alla pagina dei dettagli sullo stato di salute del cluster.
+
+* *FQDN cluster*
++
+Il nome di dominio completo (FQDN) del cluster.
+
+

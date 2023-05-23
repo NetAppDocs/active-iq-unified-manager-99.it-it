@@ -1,0 +1,76 @@
+---
+permalink: online-help/reference-lun-performance-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'I seguenti campi sono disponibili nella vista Performance: All LUN (prestazioni: Tutti i LUN) e possono essere utilizzati nelle visualizzazioni personalizzate e nei report.' 
+---
+= Campi relativi alle performance del LUN
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I seguenti campi sono disponibili nella vista Performance: All LUN (prestazioni: Tutti i LUN) e possono essere utilizzati nelle visualizzazioni personalizzate e nei report.
+
+* *Stato*
++
+Un oggetto integro senza eventi attivi visualizza un'icona con un segno di spunta verde (image:../media/sev-normal-um60.png["Icona per la severità dell'evento – normale"]). Se l'oggetto ha un evento attivo, l'icona dell'indicatore di evento identifica la severità dell'evento: Gli eventi critici sono rossi (image:../media/sev-critical-um60.png["Icona per la severità dell'evento – critico"]), gli eventi di errore sono di colore arancione (image:../media/sev-error-um60.png["Icona per la severità dell'evento – errore"]) e gli eventi di avviso sono gialli (image:../media/sev-warning-um60.png["Icona per la severità dell'evento – avviso"]).
+
+* *LUN*
++
+È possibile fare clic sul nome del LUN per accedere alla pagina dei dettagli sulle prestazioni del LUN.
+
+* *Latenza*
++
+Il tempo medio di risposta per tutte le richieste di i/o, espresso in millisecondi per operazione.
+
+* *IOPS*
++
+Le operazioni di input/output al secondo per il LUN.
+
+* *MB/s*
++
+Il throughput sul LUN, misurato in megabyte al secondo.
+
+* *Capacità libera*
++
+La capacità di storage inutilizzata del LUN, in gigabyte.
+
+* *Capacità totale*
++
+La capacità di storage totale del LUN, in gigabyte.
+
+* *Cluster*
++
+Il cluster a cui appartiene il LUN. È possibile fare clic sul nome del cluster per accedere alla pagina dei dettagli del cluster.
+
+* *FQDN cluster*
++
+Il nome di dominio completo (FQDN) del cluster.
+
+* Nodo *
++
+Il nodo a cui appartiene il LUN. È possibile fare clic sul nome del nodo per accedere alla pagina dei dettagli del nodo.
+
+* *Storage VM*
++
+La SVM (Storage Virtual Machine) a cui appartiene il LUN. È possibile fare clic sul nome SVM per accedere alla pagina dei dettagli di SVM.
+
+* *Aggregato*
++
+L'aggregato a cui appartiene il LUN. È possibile fare clic sul nome dell'aggregato per accedere alla pagina dei dettagli dell'aggregato.
+
+* *Volume*
++
+Il volume a cui appartiene il LUN. È possibile fare clic sul nome del volume per accedere alla pagina dei dettagli del volume.
+
+* *Criterio di soglia*
++
+I criteri o i criteri di soglia delle performance definiti dall'utente che sono attivi su questo oggetto di storage. È possibile posizionare il cursore sui nomi dei criteri contenenti i puntini di sospensione (...) per visualizzare il nome completo del criterio o l'elenco dei nomi dei criteri assegnati. I pulsanti *Assign Performance Threshold Policy* e *Clear Performance Threshold Policy* rimangono disattivati finché non si selezionano uno o più oggetti facendo clic sulle caselle di controllo situate all'estrema sinistra.
+
+* *QoS Policy Group*
++
+Il nome del gruppo di criteri QoS assegnato al LUN. È possibile fare clic sul nome del gruppo di criteri per accedere alla pagina dei dettagli QoS e ottenere ulteriori informazioni sulle impostazioni del gruppo di criteri.
+
+

@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-editing-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile modificare le impostazioni di un cluster esistente, ad esempio il nome host o l"indirizzo IP, il nome utente, la password e la porta, utilizzando la finestra di dialogo Edit Cluster (Modifica cluster).' 
+---
+= Modifica dei cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare le impostazioni di un cluster esistente, ad esempio il nome host o l'indirizzo IP, il nome utente, la password e la porta, utilizzando la finestra di dialogo Edit Cluster (Modifica cluster).
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dell'applicazione o di amministratore dello storage.
+
+
+
+== A proposito di questa attività
+
+[NOTE]
+====
+A partire da Unified Manager 9.7, i cluster possono essere aggiunti solo utilizzando HTTPS.
+
+====
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Storage Management* > *Cluster Setup*.
+. Nella pagina *Cluster Setup*, selezionare il cluster che si desidera modificare, quindi fare clic su *Edit* (Modifica).
+. Nella finestra di dialogo *Edit Cluster* (Modifica cluster), modificare i valori secondo necessità.
+. Fare clic su *Invia*.
+

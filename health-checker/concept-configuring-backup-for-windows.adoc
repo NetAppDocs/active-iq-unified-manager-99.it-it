@@ -1,0 +1,22 @@
+---
+permalink: health-checker/concept-configuring-backup-for-windows.html 
+sidebar: sidebar 
+keywords: backup and restore on Windows,NetApp Snapshot 
+summary: 'Active IQ Unified Manager supporta il backup e il ripristino utilizzando le istantanee NetApp sul sistema operativo Windows con l"aiuto del LUN che utilizza il protocollo iSCSI.' 
+---
+= Configurazione del backup su Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Active IQ Unified Manager supporta il backup e il ripristino utilizzando le istantanee NetApp sul sistema operativo Windows con l'aiuto del LUN che utilizza il protocollo iSCSI.
+
+È possibile eseguire il backup basato su Snapshot mentre tutti i servizi UM sono in esecuzione. Lo stato coerente del database viene acquisito come parte di Snapshot, poiché il backup inserisce un blocco di lettura globale nell'intero database che impedisce qualsiasi scrittura simultanea. Affinché il sistema Unified Manager installato sul sistema operativo Windows esegua il backup e il ripristino utilizzando NetApp Snapshots, è necessario configurare il backup di Unified Manager su Snapshot in base alla console di manutenzione.
+
+Prima di configurare l'installazione di Active IQ Unified Manager per il backup Snapshot, è necessario eseguire le seguenti attività di configurazione.
+
+* Configurare il cluster ONTAP
+* Configurare il computer host di Windows
+

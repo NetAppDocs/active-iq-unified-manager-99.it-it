@@ -1,0 +1,22 @@
+---
+permalink: online-help/reference-health-all-nodes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vista Health: All Nodes (Salute: Tutti i nodi) consente di visualizzare informazioni dettagliate sui nodi di tutti i cluster gestiti da Unified Manager.' 
+---
+= Health: Vista di tutti i nodi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista Health: All Nodes (Salute: Tutti i nodi) consente di visualizzare informazioni dettagliate sui nodi di tutti i cluster gestiti da Unified Manager.
+
+Per impostazione predefinita, gli oggetti nelle pagine di visualizzazione vengono ordinati in base alla criticità degli eventi. Gli oggetti con eventi critici vengono elencati per primi e gli oggetti con eventi di avviso vengono elencati per secondi. Ciò fornisce un'indicazione visiva immediata dei problemi che devono essere risolti. Ogni nodo della griglia Nodes ha collegamenti a Gestione di sistema di ONTAP. Questo collegamento consente di visualizzare la stessa relazione di protezione in Gestore di sistema di ONTAP.
+
+I controlli nella parte superiore della pagina consentono di selezionare una vista particolare (per lo stato, le prestazioni, la capacità e così via), eseguire ricerche per individuare oggetti specifici, creare e applicare filtri per restringere l'elenco dei dati visualizzati, aggiungere/rimuovere/riordinare le colonne della pagina, ed esportare i dati della pagina in un `.csv`, `.pdf`, o. `.xlsx` file. Dopo aver personalizzato la pagina, è possibile salvare i risultati come vista personalizzata e pianificare un report dei dati da generare e inviare via email a intervalli regolari.
+
+Nel menu *Report*, l'opzione *hardware Inventory Report* viene fornita quando Unified Manager e i cluster gestiti vengono installati in un sito senza connettività di rete esterna. Questo pulsante genera un `.csv` file che contiene un elenco completo di informazioni su cluster e nodi, ad esempio numeri di modello e di serie dell'hardware, tipi e conteggi di dischi, licenze installate e altro ancora. Questa funzionalità di reporting è utile per il rinnovo del contratto all'interno di siti sicuri non connessi alla piattaforma NetAppActive IQ.
+
+Vedere xref:reference-node-health-fields.adoc[Campi di integrità del nodo] per la descrizione di tutti i campi di questa pagina.

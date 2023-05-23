@@ -1,0 +1,104 @@
+---
+permalink: install-linux/task-upgrading-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Puoi eseguire l"aggiornamento da Unified Manager 9.7 o 9.8 a 9.9 scaricando ed eseguendo il file di installazione sulla piattaforma Red Hat.' 
+---
+= Aggiornamento di Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puoi eseguire l'aggiornamento da Unified Manager 9.7 o 9.8 a 9.9 scaricando ed eseguendo il file di installazione sulla piattaforma Red Hat.
+
+
+
+== Prima di iniziare
+
+* Il sistema su cui si esegue l'aggiornamento di Unified Manager deve soddisfare i requisiti di sistema e software.
++
+xref:concept-virtual-infrastructure-or-hardware-system-requirements.adoc[Requisiti di sistema hardware]
+
++
+xref:reference-red-hat-and-centos-software-and-installation-requirements.adoc[Requisiti di installazione e software Red Hat e CentOS]
+
+* Prima di aggiornare Unified Manager, è necessario installare o aggiornare alla versione corretta di OpenJDK.
++
+xref:task-upgrading-openjdk-on-linux-ocum.adoc[Aggiornamento di JRE su Linux]
+
+* MySQL Community Edition viene aggiornato automaticamente durante l'aggiornamento di Unified Manager. Se la versione installata di MySQL sul sistema è precedente alla 8.0.25, il processo di aggiornamento di Unified Manager aggiorna automaticamente MySQL alla versione 8.0.25.
++
+Tuttavia, potrebbe essere necessario aggiornare MySQL alla versione più recente sul sistema. Prima di eseguire l'aggiornamento alla versione secondaria successiva, assicurarsi che la versione di base di MySQL sul sistema sia la 8.0.25.
+
+* È necessario disporre di un abbonamento a Red Hat Enterprise Linux Subscription Manager.
+* Per evitare la perdita di dati, è necessario aver creato un backup del database di Unified Manager in caso di problemi durante l'aggiornamento. Si consiglia inoltre di spostare il file di backup da `/opt/netapp/data` directory in una posizione esterna.
+* Durante l'aggiornamento, potrebbe essere richiesto di confermare se si desidera mantenere le impostazioni predefinite precedenti per la conservazione dei dati sulle prestazioni per 13 mesi o se si desidera modificarli in 6 mesi. Alla conferma, i dati storici delle performance dopo 6 mesi vengono eliminati.
+* Le operazioni in esecuzione dovrebbero essere state completate, poiché Unified Manager non è disponibile durante il processo di aggiornamento.
+
+
+
+
+== Fasi
+
+. Accedere al server Red Hat Enterprise Linux o CentOS di destinazione.
+. Scaricare il bundle Unified Manager sul server.
++
+xref:task-downloading-unified-manager.adoc[Download di Unified Manager per Red Hat o CentOS]
+
+. Accedere alla directory di destinazione ed espandere il bundle Unified Manager: `unzip ActiveIQUnifiedManager-<version\>.zip`
++
+I moduli RPM richiesti per Unified Manager vengono decompressi nella directory di destinazione.
+
+. Verificare che il seguente modulo sia disponibile nella directory: `ls *.rpm`
++
+** `netapp-um<version\>.x86_64.rpm`
+
+
+. Per i sistemi che non sono connessi a Internet o che non utilizzano i repository Red Hat Enterprise Linux, attenersi alla seguente procedura per determinare se mancano i pacchetti richiesti e scaricarli:
++
+.. Visualizzare l'elenco dei pacchetti disponibili e non disponibili: `yum install netapp-um<version\>.x86_64.rpm --assumeno`
++
+Gli elementi della sezione "`Installing:`" sono i pacchetti disponibili nella directory corrente, mentre gli elementi della sezione "`Installing for dependenze:`" sono i pacchetti mancanti nel sistema.
+
+.. Su un altro sistema con accesso a Internet, eseguire il seguente comando per scaricare i pacchetti mancanti. `yum install package_name --downloadonly --downloaddir=.`
++
+I pacchetti vengono scaricati nella directory specificata come `–downloaddir=.`
+
++
+Poiché il plug-in "`yum-plugin-downloadonly`" non è sempre abilitato sui sistemi Red Hat Enterprise Linux, potrebbe essere necessario abilitare la funzionalità per scaricare un pacchetto senza installarlo:``yum install yum-plugin-downloadonly``
+
+.. Creare una nuova directory nel sistema di installazione e copiare i pacchetti scaricati dal sistema connesso a Internet.
+.. Modificare le directory nella nuova directory del sistema di installazione ed eseguire il seguente comando per installare MySQL Community Edition, insieme alle relative dipendenze. `yum install *.rpm`
+
+
+. Eseguire lo script di preinstallazione per assicurarsi che non vi siano impostazioni di configurazione del sistema o software installati che potrebbero entrare in conflitto con l'aggiornamento: `sudo ./pre_install_check.sh`
++
+Lo script di preinstallazione verifica che il sistema disponga di un abbonamento Red Hat valido e che abbia accesso ai repository software richiesti. Se lo script identifica eventuali problemi, è necessario risolverli prima di aggiornare Unified Manager.
+
+. Aggiornare Unified Manager utilizzando il seguente script: `upgrade.sh`
++
+Questo script esegue automaticamente i moduli RPM, aggiornando il software di supporto necessario e i moduli Unified Manager che li eseguono. Inoltre, lo script di aggiornamento verifica se sono presenti impostazioni di configurazione del sistema o software installati che potrebbero entrare in conflitto con l'aggiornamento. Se lo script identifica eventuali problemi, è necessario risolverli prima di aggiornare Unified Manager.
+
+. Una volta completato l'aggiornamento, scorrere i messaggi fino a visualizzare un indirizzo IP o un URL per l'interfaccia utente Web di Unified Manager, il nome utente per la manutenzione (umadmin) e la password predefinita.
++
+Il messaggio è simile al seguente:
+
++
+[listing]
+----
+Active IQ Unified Manager upgraded successfully.
+Use a web browser and one of the following URLs to access the Unified Manager GUI:
+
+https://default_ip_address/    (if using IPv4)
+https://[default_ip_address]/  (if using IPv6)
+https://fully_qualified_domain_name/
+----
+
+
+
+
+== Al termine
+
+Inserire l'indirizzo IP o l'URL specificato in un browser Web supportato per avviare l'interfaccia utente Web di Unified Manager, quindi accedere utilizzando lo stesso nome utente di manutenzione (umadmin) e la stessa password impostati in precedenza.

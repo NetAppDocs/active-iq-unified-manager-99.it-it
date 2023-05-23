@@ -1,0 +1,63 @@
+---
+permalink: health-checker/concept-configuring-the-destination-and-schedule-for-database-dump-backups.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile configurare le impostazioni di backup del dump del database di Unified Manager per impostare il percorso di backup del database, il numero di conservazione e la pianificazione di backup. È possibile attivare backup pianificati giornalieri o settimanali. Per impostazione predefinita, i backup pianificati sono disattivati, ma è necessario impostare una pianificazione di backup. 
+---
+= Configurazione della destinazione e della pianificazione per i backup dei dump del database
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare le impostazioni di backup del dump del database di Unified Manager per impostare il percorso di backup del database, il numero di conservazione e la pianificazione di backup. È possibile attivare backup pianificati giornalieri o settimanali. Per impostazione predefinita, i backup pianificati sono disattivati, ma è necessario impostare una pianificazione di backup.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di operatore, amministratore dell'applicazione o amministratore dello storage.
+* È necessario disporre di almeno 150 GB di spazio disponibile nella posizione definita come percorso di backup.
++
+Si consiglia di utilizzare una postazione remota esterna al sistema host di Unified Manager.
+
+* Quando Unified Manager viene installato su un sistema Linux e si utilizza il backup MySQL, assicurarsi che nella directory di backup siano impostate le seguenti autorizzazioni e proprietà.
++
+Permissions: 0750, Ownership: jboss:maintenance
+
+* Quando Unified Manager viene installato su un sistema Windows e si utilizza il backup MySQL, assicurarsi che solo l'amministratore abbia accesso alla directory di backup.
+
+
+
+
+== A proposito di questa attività
+
+La prima volta che viene eseguito un backup è necessario più tempo rispetto ai backup successivi, poiché il primo backup è un backup completo. Un backup completo può superare 1 GB e può richiedere da tre a quattro ore. I backup successivi sono incrementali e richiedono meno tempo.
+
+[NOTE]
+====
+* Se si rileva che il numero di file di backup incrementali sta diventando troppo grande per lo spazio allocato per i backup, è possibile creare periodicamente un nuovo backup completo per sostituire il backup completo precedente e tutti i file incrementali figlio. Se Unified Manager è installato su un sistema Linux, è possibile iniziare a utilizzare il metodo di backup NetApp Snapshot.
+* Il backup eseguito durante i primi 15 giorni di aggiunta di un nuovo cluster potrebbe non essere sufficientemente accurato per ottenere i dati storici delle performance.
+
+
+====
+
+
+== Fasi
+
+. Nel riquadro di spostamento a sinistra, fare clic su *General* > *Database Backup*.
+. Nella pagina *Database Backup*, fare clic su *Backup Settings*.
+. Configurare i valori appropriati per un percorso di backup, un numero di conservazione e una pianificazione.
++
+Il valore predefinito per il conteggio di conservazione è 10; è possibile utilizzare 0 per creare backup illimitati.
+
+. Selezionare il pulsante *pianificato giornaliero* o *pianificato settimanale*, quindi specificare i dettagli della pianificazione.
+. Fare clic su *Apply* (Applica).
+
+
+
+
+== Risultati
+
+I file di backup del dump del database vengono creati in base alla pianificazione. I file di backup disponibili sono disponibili nella pagina Database Backup.

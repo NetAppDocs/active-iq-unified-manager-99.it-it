@@ -1,0 +1,48 @@
+---
+permalink: online-help/task-uploading-a-new-active-iq-rules-file.html 
+sidebar: sidebar 
+keywords: Active IQ,rules file 
+summary: Unified Manager verifica automaticamente la presenza di un nuovo file di regole Active IQ e scarica un nuovo file quando sono presenti regole più recenti. Tuttavia, nei siti senza accesso alla rete esterna, è necessario caricare manualmente il file di regole. 
+---
+= Caricamento di un nuovo file di regole Active IQ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager verifica automaticamente la presenza di un nuovo file di regole Active IQ e scarica un nuovo file quando sono presenti regole più recenti. Tuttavia, nei siti senza accesso alla rete esterna, è necessario caricare manualmente il file di regole.
+
+
+
+== Prima di iniziare
+
+* È necessario attivare la funzione di reporting degli eventi Active IQ.
+* È necessario scaricare il file di regole dal sito del supporto NetApp.
+
+
+
+
+== A proposito di questa attività
+
+Si consiglia di scaricare un nuovo file di regole circa una volta al mese per assicurarsi che i sistemi storage siano protetti e che funzionino in modo ottimale. Il file di regole si trova in: http://mysupport.netapp.com/NOW/public/unified_manager/bin/secure_rules.zip[]
+
+
+
+== Fasi
+
+. Su un computer con accesso alla rete, accedere al sito del supporto NetApp e scaricare le regole correnti `.zip` file.
+. Trasferire il file di regole su alcuni supporti che è possibile inserire nell'area protetta e copiarlo su un sistema nell'area protetta.
+. Nel riquadro di navigazione a sinistra, fare clic su *Storage Management* > *Event Setup*.
+. Nella pagina *impostazione evento*, fare clic sul pulsante *regole di caricamento*.
+. Nella finestra di dialogo *regole di caricamento*, selezionare le regole e selezionarle `.zip` File scaricato e fare clic su *carica*.
++
+Questo processo può richiedere alcuni minuti.
+
+
+
+
+
+== Risultati
+
+Il file di regole viene decompresso sul server Unified Manager. Dopo che i cluster gestiti generano un file AutoSupport dopo la mezzanotte, Unified Manager verificherà i cluster in base al file di regole e genererà nuovi eventi di rischio e incidenti, se necessario.

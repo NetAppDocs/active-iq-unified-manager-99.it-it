@@ -1,0 +1,50 @@
+---
+permalink: online-help/reference-lag-thresholds-for-unmanaged-relationships-page.html 
+sidebar: sidebar 
+keywords:  
+summary: La pagina soglie di relazione consente di configurare i valori di avviso e soglia di errore globali per le relazioni di protezione non gestite, in modo da ricevere una notifica e intervenire in caso di errori di ritardo o di soglia. Le modifiche a queste impostazioni vengono applicate durante il successivo aggiornamento pianificato. 
+---
+= Pagina soglie di relazione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina soglie di relazione consente di configurare i valori di avviso e soglia di errore globali per le relazioni di protezione non gestite, in modo da ricevere una notifica e intervenire in caso di errori di ritardo o di soglia. Le modifiche a queste impostazioni vengono applicate durante il successivo aggiornamento pianificato.
+
+È necessario disporre del ruolo di amministratore dell'applicazione o di amministratore dello storage.
+
+Gli eventi vengono generati quando viene violata una soglia per volumi o macchine virtuali di storage. È possibile intraprendere azioni correttive per tali eventi. Gli eventi vengono ora generati per le relazioni delle macchine virtuali di storage, ma bloccati per le relazioni costitutive all'interno della configurazione di disaster recovery delle macchine virtuali di storage. In questo modo si evita che vengano generati troppi eventi per una relazione. Le impostazioni delle soglie di ritardo per le relazioni non gestite sono attivate per impostazione predefinita e vengono fornite anche per le VM di storage.
+
+La soglia di ritardo specifica una percentuale che il tempo di ritardo non deve superare. Utilizzando un esempio di un'ora, se la soglia di ritardo è definita come 150%, si riceverà un evento quando il tempo di ritardo è superiore a 1.5 ore.
+
+
+
+== Soglie di ritardo per l'area delle relazioni non gestite
+
+L'area Lag consente di impostare soglie di ritardo delle relazioni non gestite per le seguenti condizioni:
+
+* *Attenzione*
++
+Specifica la percentuale in cui la durata del ritardo equivale o supera la soglia di avviso del ritardo:
+
++
+** Valore predefinito: 150 percento
+** Eventi generati: Avviso di ritardo relazione SnapMirror o avviso di ritardo relazione SnapVault
+** Severità dell'evento: Avviso
+
+
+* *Errore*
++
+Specifica la percentuale in cui la durata del ritardo equivale o supera la soglia di errore del ritardo:
+
++
+** Valore predefinito: 250 percento
+** Eventi generati: Errore ritardo relazione SnapMirror o errore ritardo relazione SnapVault
+** Severità evento: Errore
+
+
+
+
+Inoltre, puoi disattivare l'attivazione di un evento di avviso o errore da qualsiasi valore di soglia di ritardo deselezionando la casella accanto a Enabled (attivato).

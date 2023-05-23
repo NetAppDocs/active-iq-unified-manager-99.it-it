@@ -1,0 +1,16 @@
+---
+permalink: config/concept-configuring-um-backup.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile configurare la funzionalità di backup su Unified Manager attraverso una serie di procedure di configurazione da eseguire sui sistemi host e sulla console di manutenzione. 
+---
+= Configurazione del backup di Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare la funzionalità di backup su Unified Manager attraverso una serie di procedure di configurazione da eseguire sui sistemi host e sulla console di manutenzione.
+
+Per informazioni sulle procedure di configurazione, vedere "`Moperazioni di backup e ripristino`" in _Guida al flusso di lavoro di Unified Manager Active IQ® per la gestione dello stato dei cluster_.

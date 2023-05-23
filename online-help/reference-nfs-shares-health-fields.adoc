@@ -1,0 +1,125 @@
+---
+permalink: online-help/reference-nfs-shares-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'I seguenti campi sono disponibili nella vista Health: All NFS shares (Salute: Tutte le condivisioni NFS) e possono essere utilizzati nelle visualizzazioni personalizzate e nei report.' 
+---
+= NFS condivide i campi di salute
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I seguenti campi sono disponibili nella vista Health: All NFS shares (Salute: Tutte le condivisioni NFS) e possono essere utilizzati nelle visualizzazioni personalizzate e nei report.
+
+* *Stato*
++
+Visualizza lo stato corrente delle condivisioni NFS. Lo stato può essere Error (image:../media/sev-error-um60.png["Icona per la severità dell'evento – errore"]) O normale (image:../media/sev-normal-um60.png["Icona per la severità dell'evento – normale"]).
+
+* *Percorso di montaggio*
++
+Visualizza il percorso in cui è montato il volume. Se a un qtree viene applicato un criterio di esportazione NFS esplicito, la colonna visualizza il percorso del volume attraverso il quale è possibile accedere al qtree.
+
+* *Percorso di montaggio attivo*
++
+Visualizza se il percorso per accedere al volume montato è attivo o inattivo.
+
+* *Qtree*
++
+Visualizza il nome del qtree a cui viene applicato il criterio di esportazione NFS.
+
+* *Volume*
++
+Visualizza il nome del volume a cui viene applicato il criterio di esportazione NFS.
+
+* *Stato del volume*
++
+Visualizza lo stato del volume che si sta esportando. Lo stato può essere Offline, Online, Restricted o Mixed.
+
++
+** Offline
++
+Non è consentito l'accesso in lettura o scrittura al volume.
+
+** Online
++
+È consentito l'accesso in lettura e scrittura al volume.
+
+** Limitato
++
+Sono consentite operazioni limitate, come la ricostruzione della parità, ma non è consentito l'accesso ai dati.
+
+** Misto
++
+I componenti di un volume FlexGroup non si trovano tutti nello stesso stato.
+
+
+
+* *Stile di sicurezza*
++
+Visualizza l'autorizzazione di accesso per i volumi esportati. Lo stile di sicurezza può essere UNIX, Unified, NTFS o Mixed.
+
++
+** UNIX (client NFS)
++
+I file e le directory del volume dispongono delle autorizzazioni UNIX.
+
+** Unificato
++
+I file e le directory del volume hanno uno stile di sicurezza unificato.
+
+** NTFS (client CIFS)
++
+I file e le directory del volume dispongono delle autorizzazioni NTFS di Windows.
+
+** Misto
++
+I file e le directory del volume possono disporre di autorizzazioni UNIX o NTFS di Windows.
+
+
+
+* *Autorizzazione UNIX*
++
+Visualizza i bit di autorizzazione UNIX in un formato di stringa ottale, impostato per i volumi esportati. È simile ai bit di permesso di stile UNIX.
+
+* *Politica di esportazione*
++
+Visualizza le regole che definiscono l'autorizzazione di accesso per i volumi esportati.
+
++
+Quando si genera un report per la vista Health: All NFS shares (Salute: Tutte le condivisioni NFS), tutte le regole che appartengono alla policy di esportazione vengono esportate nel file CSV o PDF.
+
+* *Indice delle regole*
++
+Visualizza le regole associate ai criteri di esportazione, ad esempio i protocolli di autenticazione e l'autorizzazione di accesso.
+
+* *Protocolli di accesso*
++
+Visualizza i protocolli abilitati per le regole dei criteri di esportazione.
+
+* *Corrispondenza client*
++
+Visualizza i client che dispongono dell'autorizzazione per accedere ai dati sui volumi.
+
+* *Accesso di sola lettura*
++
+Visualizza il protocollo di autenticazione utilizzato per leggere i dati sui volumi.
+
+* *Accesso in lettura/scrittura*
++
+Visualizza il protocollo di autenticazione utilizzato per leggere o scrivere i dati sui volumi.
+
+* *Storage VM*
++
+Visualizza il nome della SVM con i criteri di condivisione NFS.
+
+* *Cluster*
++
+Visualizza il nome del cluster.
+
+* *FQDN cluster*
++
+Visualizza il nome di dominio completo (FQDN) del cluster.
+
+

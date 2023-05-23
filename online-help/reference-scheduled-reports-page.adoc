@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-scheduled-reports-page.html 
+sidebar: sidebar 
+keywords:  
+summary: La pagina Report Schedules consente di visualizzare informazioni dettagliate sui report creati e sulla pianificazione in cui vengono generati. È possibile cercare un report specifico, modificare alcuni attributi di una pianificazione del report ed eliminare una pianificazione del report. 
+---
+= Report Schedules (Pianificazioni report)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Report Schedules consente di visualizzare informazioni dettagliate sui report creati e sulla pianificazione in cui vengono generati. È possibile cercare un report specifico, modificare alcuni attributi di una pianificazione del report ed eliminare una pianificazione del report.
+
+La pagina Report Schedules (Pianificazioni report) visualizza l'elenco dei report creati nel sistema.
+
+* *Nome pianificazione*
++
+Il nome del report pianificato. Inizialmente questo nome include il nome della vista e la frequenza. È possibile modificare questo nome per riflettere meglio il contenuto del report.
+
+* *Visualizza*
++
+La vista utilizzata per creare il report.
+
+* *Destinatari*
++
+Gli indirizzi e-mail degli utenti che riceveranno il report generato. Ogni indirizzo e-mail deve essere separato da una virgola.
+
+* *Frequenza*
++
+Con quale frequenza viene generato e inviato il report ai destinatari.
+
+* *Formato*
++
+Se il report viene generato come file PDF o in formato XLSX o CSV.
+
+* *Pulsante azione*
++
+Opzioni disponibili per modificare o eliminare la pianificazione del report.
+
+

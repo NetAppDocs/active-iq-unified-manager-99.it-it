@@ -1,0 +1,18 @@
+---
+permalink: api-automation/concept-getting-started-with-getting-started-with-um-apis.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Active IQ Unified Manager offre un set di API per gestire le risorse di storage sui sistemi di storage supportati attraverso un"interfaccia di servizio Web RESTful per qualsiasi integrazione di terze parti.' 
+---
+= Introduzione a Active IQ Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Active IQ Unified Manager offre un set di API per gestire le risorse di storage sui sistemi di storage supportati attraverso un'interfaccia di servizio Web RESTful per qualsiasi integrazione di terze parti.
+
+La _Guida per gli sviluppatori API di Unified Manager_ fornisce informazioni sulle API e sui codici di esempio. Le informazioni fornite nella guida consentono di creare client RESTful delle soluzioni software di gestione NetApp per la gestione dei sistemi NetApp. Le API sono basate sullo stile architettonico REST (Representational state Transfer).
+
+Unified Manager offre API per la gestione dello storage nel tuo ambiente NetApp. Sono supportate tutte e quattro le operazioni REST Create, Read, Update ed Delete (note anche come CRUD).

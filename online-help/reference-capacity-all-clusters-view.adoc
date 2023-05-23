@@ -1,0 +1,18 @@
+---
+permalink: online-help/reference-capacity-all-clusters-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vista capacità: Tutti i cluster consente di visualizzare informazioni riepilogative sulla capacità e sull"utilizzo dello storage in tutti i cluster. Queste informazioni ti aiutano a comprendere i possibili rischi di capacità e a intraprendere le azioni appropriate per ribilanciare i carichi di lavoro.' 
+---
+= Capacità: Vista di tutti i cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista capacità: Tutti i cluster consente di visualizzare informazioni riepilogative sulla capacità e sull'utilizzo dello storage in tutti i cluster. Queste informazioni ti aiutano a comprendere i possibili rischi di capacità e a intraprendere le azioni appropriate per ribilanciare i carichi di lavoro.
+
+I controlli nella parte superiore della pagina consentono di selezionare una vista particolare (per lo stato, le prestazioni, la capacità e così via), eseguire ricerche per individuare oggetti specifici, creare e applicare filtri per restringere l'elenco dei dati visualizzati, aggiungere/rimuovere/riordinare le colonne della pagina, ed esportare i dati della pagina in un `.csv`, `.pdf`, o. `.xlsx` file. Dopo aver personalizzato la pagina, è possibile salvare i risultati come vista personalizzata e pianificare un report dei dati da generare e inviare via email a intervalli regolari.
+
+Vedere xref:reference-cluster-capacity-fields.adoc[Campi relativi alla capacità del cluster] per la descrizione di tutti i campi di questa pagina.

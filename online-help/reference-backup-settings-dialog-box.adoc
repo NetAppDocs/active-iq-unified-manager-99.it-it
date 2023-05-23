@@ -1,0 +1,83 @@
+---
+permalink: online-help/reference-backup-settings-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La finestra di dialogo Backup Settings (Impostazioni di backup) consente di configurare le impostazioni per il backup di MySQL e NetApp Snapshot. A seconda del backup configurato, nella finestra di dialogo Backup Settings (Impostazioni backup) vengono visualizzati i campi correlati. Per il backup di un database MySQL, è possibile definire la pianificazione del backup, il numero di conservazione e il percorso di backup per un"istanza di Active IQ Unified Manager selezionata.' 
+---
+= Finestra di dialogo Backup Settings (Impostazioni di backup)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La finestra di dialogo Backup Settings (Impostazioni di backup) consente di configurare le impostazioni per il backup di MySQL e NetApp Snapshot. A seconda del backup configurato, nella finestra di dialogo Backup Settings (Impostazioni backup) vengono visualizzati i campi correlati. Per il backup di un database MySQL, è possibile definire la pianificazione del backup, il numero di conservazione e il percorso di backup per un'istanza di Active IQ Unified Manager selezionata.
+
+È possibile modificare le seguenti impostazioni di backup del database:
+
+* *CLUSTER*
++
+È necessario fornire l'IP di gestione del cluster del sistema storage in cui verranno ospitati i dati di Unified Manager.
+
+* *VOLUME*
++
+Specificare il nome del volume che contiene il LUN dedicato per ospitare i dati di Unified Manager.
+
+* *VM DI STORAGE*
++
+Specificare il nome della VM di storage in cui si trova il volume, contenente il LUN dedicato per ospitare i dati di Unified Manager.
+
+* *LUN*
++
+Specificare il nome del LUN in cui sono ospitati i dati di Unified Manager quando il backup è del tipo NetApp Snapshot.
+
+* *MOUNT PATH*
++
+Quando si utilizza il metodo di backup dump del database MySQL, questo campo specifica il percorso in cui memorizzare i file di backup. Quando si utilizza il metodo di backup Snapshot, questa posizione mostra il cluster, la VM di storage e il volume su cui verrà memorizzato il backup.
+
++
+La seguente tabella specifica il formato del percorso di backup e le posizioni predefinite per i diversi sistemi operativi:
+
++
+[cols="2*"]
+|===
+| Sistema operativo host | Formato del percorso di backup 
+
+
+ a| 
+Appliance virtuale
+ a| 
+`/opt/netapp/data/ocum-backup`
+
+
+
+ a| 
+Red Hat Enterprise Linux o CentOS Linux
+ a| 
+`/data/ocum-backup`
+
+
+
+ a| 
+Microsoft Windows
+ a| 
+Nel caso di Windows, è necessario fornire il percorso di montaggio. Ad esempio, se il percorso di montaggio è un disco "`D`", specificare il percorso di montaggio come `D:`
+
+|===
+* *CONTEGGIO CONSERVAZIONE*
++
+Specifica il numero massimo di backup che devono essere conservati da Unified Manager. Il valore predefinito è 10.
+
+* *Giornaliero pianificato*
++
+Specifica la pianificazione giornaliera del backup con l'ora.
+
+* *Settimanale pianificato*
++
+Specifica la pianificazione settimanale del backup con il giorno e l'ora.
+
+* *Nessuno*
++
+Specifica che non verranno creati backup.
+
+

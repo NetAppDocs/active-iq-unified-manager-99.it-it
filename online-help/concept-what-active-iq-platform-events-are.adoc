@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-what-active-iq-platform-events-are.html 
+sidebar: sidebar 
+keywords: Active IQ 
+summary: Unified Manager può visualizzare gli eventi rilevati dalla piattaforma Active IQ. Questi eventi vengono creati eseguendo una serie di regole per i messaggi AutoSupport generati da tutti i sistemi storage monitorati da Unified Manager. 
+---
+= Quali sono gli eventi della piattaforma Active IQ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager può visualizzare gli eventi rilevati dalla piattaforma Active IQ. Questi eventi vengono creati eseguendo una serie di regole per i messaggi AutoSupport generati da tutti i sistemi storage monitorati da Unified Manager.
+
+Unified Manager verifica automaticamente la presenza di un nuovo file di regole e lo scarica solo quando sono presenti regole più recenti. Nei siti senza accesso alla rete esterna, è necessario caricare manualmente le regole da *Storage Management* > *Event Setup* > *Upload Rules*.
+
+Questi eventi di Active IQ non si sovrappongono agli eventi di Unified Manager esistenti e identificano incidenti o rischi relativi a configurazione del sistema, cablaggio, Best practice e problemi di disponibilità.
+
+NetApp Active IQ è un servizio basato sul cloud che offre analisi predittive e supporto proattivo per ottimizzare le operazioni del sistema storage nel cloud ibrido NetApp. Vedere https://www.netapp.com/us/products/data-infrastructure-management/active-iq.aspx["NetApp Active IQ"] per ulteriori informazioni.

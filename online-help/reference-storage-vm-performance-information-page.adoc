@@ -1,0 +1,74 @@
+---
+permalink: online-help/reference-storage-vm-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Utilizzare la pagina Storage VM/Performance Information per visualizzare un elenco degli attributi configurati di SVM. Queste informazioni potrebbero essere utili per rispondere alle domande relative alle performance. 
+---
+= Pagina Storage VM/Performance Information
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilizzare la pagina Storage VM/Performance Information per visualizzare un elenco degli attributi configurati di SVM. Queste informazioni potrebbero essere utili per rispondere alle domande relative alle performance.
+
+
+
+== Attributi delle macchine virtuali di storage
+
+* *Indirizzo IP*
++
+Indirizzi IPv4 o IPv6 di tutte le interfacce collegate a questa SVM.
+
+* *IPSpace*
++
+L'IPSpace in cui risiede questa SVM.
+
+* *Nome dominio*
++
+I nomi di dominio FQDN (Fully Qualified Domain Name) delle interfacce collegate a questa SVM.
+
+* *Tipo di servizio*
++
+Il tipo di SVM.
+
++
+I valori possibili includono: "`Admin`" per la SVM di gestione a livello di cluster, "`SSystem`" per le comunicazioni a livello di cluster in un IPSpace, "`Data`" per la SVM di servizio dei dati e "`Node`" per la SVM di gestione dei nodi.
+
+* *Capacità (libera/totale)*
++
+Lo storage totale disponibile per la SVM, in gigabyte, e la quantità di storage attualmente disponibile.
+
+* *Cluster*
++
+Il nome del cluster a cui appartiene l'SVM. È possibile fare clic sul nome per visualizzare i dettagli del cluster nella pagina Cluster/Performance Explorer.
+
+* *Volumi*
++
+Il numero di volumi nella SVM. È possibile fare clic sul numero per visualizzare i volumi nella pagina Performance/Volumes Inventory.
+
+* *Interfacce di rete*
++
+Il numero di interfacce di rete disponibili per SVM.
+
+* *Interfacce di rete dati*
++
+Il numero e il tipo di interfacce di rete dati disponibili per SVM.
+
+* *Tipo di volume consentito*
++
+Il tipo di volume che è possibile creare su SVM.
+
++
+Le SVM possono contenere uno o più volumi FlexVol o FlexGroup.
+
+* *Protocolli consentiti*
++
+L'elenco di tutti i protocolli che possono essere serviti da questa SVM. I protocolli disponibili sono FC/FCoE, iSCSI, HTTP, NDMP, NVMe, NFS e CIFS.
+
+* *Set di porte*
++
+Se definito per i protocolli FCP o iSCSI, il set di porte assegnato a questa SVM.
+
+

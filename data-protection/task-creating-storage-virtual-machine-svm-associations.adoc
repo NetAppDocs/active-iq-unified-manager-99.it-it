@@ -1,0 +1,66 @@
+---
+permalink: data-protection/task-creating-storage-virtual-machine-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: La procedura guidata Crea peer di macchine virtuali di storage consente alle applicazioni di protezione dei partner di associare una macchina virtuale di storage di origine a una macchina virtuale di storage di destinazione da utilizzare con le relazioni SnapMirror e SnapVault. Le applicazioni dei partner utilizzano queste associazioni al momento del provisioning iniziale dei volumi di destinazione per determinare le risorse da selezionare. 
+---
+= Creazione di peer di Storage VM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La procedura guidata Crea peer di macchine virtuali di storage consente alle applicazioni di protezione dei partner di associare una macchina virtuale di storage di origine a una macchina virtuale di storage di destinazione da utilizzare con le relazioni SnapMirror e SnapVault. Le applicazioni dei partner utilizzano queste associazioni al momento del provisioning iniziale dei volumi di destinazione per determinare le risorse da selezionare.
+
+
+
+== Prima di iniziare
+
+* La VM di storage che si sta associando deve già esistere.
+* È necessario disporre del ruolo di amministratore dell'applicazione o di amministratore dello storage.
+
+
+
+
+== A proposito di questa attività
+
+Per qualsiasi tipo di relazione e VM di storage di origine, è possibile scegliere una sola VM di storage di destinazione per ogni cluster di destinazione.
+
+La modifica delle associazioni che utilizzano le funzioni di eliminazione e creazione influisce solo sulle future operazioni di provisioning. Non sposta i volumi di destinazione esistenti.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Protection* > *Storage VM Peers*.
+. Nella pagina *SVM Peers*, fare clic su *Create* (Crea).
++
+Viene avviata la procedura guidata Create Storage Virtual Machine Peers.
+
+. Selezionare una delle seguenti fonti:
++
+** *Qualsiasi*
++
+Scegliere questa opzione per creare un'associazione tra un'origine VM di storage primario e una o più VM di storage di destinazione. Ciò significa che tutte le VM di storage esistenti che richiedono attualmente la protezione, nonché tutte le VM di storage create in futuro, sono associate alla VM di storage di destinazione specificata. Ad esempio, è possibile eseguire il backup di applicazioni provenienti da diverse origini in posizioni diverse su una o più macchine virtuali di storage di destinazione in un'unica posizione.
+
+** *Singolo*
++
+Scegliere questa opzione se si desidera selezionare una VM storage di origine specifica associata a una o più VM storage di destinazione. Ad esempio, se si forniscono servizi di storage a molti client i cui dati devono essere separati l'uno dall'altro, scegliere questa opzione per associare una specifica origine della VM di storage a una specifica destinazione della VM di storage assegnata solo a quel client.
+
+** *Nessuno (esterno)*
++
+Scegliere questa opzione per creare un'associazione tra una VM di storage di origine e un volume flessibile esterno di una VM di storage di destinazione.
+
+
+
+. Selezionare uno o entrambi i tipi di relazione di protezione che si desidera creare:
++
+** *SnapMirror*
+** *SnapVault*
+
+
+. Fare clic su *Avanti*.
+. Selezionare una o più destinazioni di protezione delle VM di storage.
+. Fare clic su *fine*.
+

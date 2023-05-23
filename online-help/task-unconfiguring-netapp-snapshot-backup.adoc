@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-unconfiguring-netapp-snapshot-backup.html 
+sidebar: sidebar 
+keywords: NetApp Snapshot Backup for Windows,Unconfigure 
+summary: 'Se si desidera modificare il tipo di backup per il sistema Active IQ Unified Manager, è possibile utilizzare le opzioni della console di manutenzione. L"opzione Unconfigure NetApp Snapshot Backup consente di tornare al backup basato su MySQL.' 
+---
+= Modifica del tipo di backup
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se si desidera modificare il tipo di backup per il sistema Active IQ Unified Manager, è possibile utilizzare le opzioni della console di manutenzione. L'opzione Unconfigure NetApp Snapshot Backup consente di tornare al backup basato su MySQL.
+
+
+
+== Prima di iniziare
+
+Per accedere alla console di manutenzione del server Unified Manager, è necessario disporre di un ID utente e di una password autorizzati.
+
+
+
+== Fasi
+
+. Accedere alla console di manutenzione.
+. Selezionare `4` Dal menu principale per il backup del ripristino.
+. Selezionare `2` Dal menu *Backup and Restore (Backup e ripristino)*.
+. Selezionare `4` Per *Unconfigure NetApp Snapshot Backup*.
++
+Vengono visualizzate le azioni eseguite, ovvero arrestare i servizi, interrompere il collegamento simbolico, spostare i dati dallo storage alla directory, quindi riavviare i servizi.
+
++
+Una volta che il backup NetApp Snapshot non è stato configurato, il meccanismo di backup passa al predefinito basato su MySQL. Questa modifica viene visualizzata nella sezione Database Backup (Backup database) delle impostazioni generali.
+
+

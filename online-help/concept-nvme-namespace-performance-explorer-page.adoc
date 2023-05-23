@@ -1,0 +1,35 @@
+---
+permalink: online-help/concept-nvme-namespace-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina NVMe namespace/Performance Explorer fornisce una panoramica dettagliata delle performance di tutti gli spazi dei nomi NVMe all"interno di un cluster.' 
+---
+= NVMe namespace/pagina Performance Explorer
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina NVMe namespace/Performance Explorer fornisce una panoramica dettagliata delle performance di tutti gli spazi dei nomi NVMe all'interno di un cluster.
+
+La pagina NVMe namespace/Performance Explorer consente di tenere traccia e confrontare le prestazioni dello spazio dei nomi NVMe durante un periodo di tempo specifico, consentendo di risolvere i problemi e ottimizzare le prestazioni degli spazi dei nomi.
+
+Utilizzando la funzionalità View and compare è possibile confrontare le prestazioni di questo namespace NVMe con:
+
+* Il volume su cui risiede lo spazio dei nomi
+* Altri namespace che si trovano sullo stesso volume
+* Altri namespace che si trovano sulla stessa VM di storage
+
+
+La pagina NVMe namespace/Performance Explorer consente di:
+
+* Visualizza i problemi relativi alle soglie e i relativi dettagli
+* Tenere traccia e confrontare i dati relativi alle performance dello spazio dei nomi
+* Analizzare e risolvere i problemi relativi alla soglia
+* Analizzare e risolvere i problemi relativi alle prestazioni
+* Avviare System Manager per apportare una modifica alla configurazione dello spazio dei nomi
++
+Il pulsante *Configura spazio dei nomi NVMe* è disponibile se si è connessi a Unified Manager con il ruolo di amministratore dell'applicazione o dello storage e quando si utilizza ONTAP 9.5 o versione successiva.
+
+

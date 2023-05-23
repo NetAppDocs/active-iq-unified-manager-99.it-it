@@ -1,0 +1,85 @@
+---
+permalink: online-help/reference-cluster-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'I seguenti campi sono disponibili nella vista Health: All Clusters (Salute: Tutti i cluster) e possono essere utilizzati nelle visualizzazioni personalizzate e nei report.' 
+---
+= Campi di integrità del cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I seguenti campi sono disponibili nella vista Health: All Clusters (Salute: Tutti i cluster) e possono essere utilizzati nelle visualizzazioni personalizzate e nei report.
+
+* *Stato*
++
+Icona che identifica lo stato corrente del cluster. Lo stato può essere critico (image:../media/sev-critical-um60.png[""]), errore (image:../media/sev-error-um60.png[""]), Avviso (image:../media/sev-warning-um60.png[""]), o normale (image:../media/sev-normal-um60.png[""]).
+
+* *Cluster*
++
+Il nome del cluster. È possibile fare clic sul nome del cluster per accedere alla pagina dei dettagli sullo stato di salute del cluster.
+
+* *FQDN cluster*
++
+Il nome di dominio completo (FQDN) del cluster.
+
+* *Stato della comunicazione*
++
+Se il cluster è raggiungibile o meno.
+
++
+Se il cluster è raggiungibile, lo stato viene visualizzato correttamente. Se il cluster non è raggiungibile o le credenziali di accesso non sono valide, lo stato viene visualizzato come non raggiungibile.
+
+* *Stato del sistema*
++
+Informazioni di alto livello sullo stato del cluster, che vengono calcolate in base allo stato dei vari sottosistemi del cluster.
+
++
+I valori possibili sono OK, OK con sospeso, degradato e componenti non raggiungibili. Questi valori sono determinati dai monitor di stato nel software ONTAP.
+
+* *Ora dell'ultimo aggiornamento*
++
+Indicazione dell'ora dell'ultima raccolta dei campioni di monitoraggio del cluster.
+
+* *FIPS attivato*
++
+Se la modalità FIPS è attivata sul cluster.
+
+* *Versione del sistema operativo*
++
+Versione di ONTAP in esecuzione nel cluster.
+
++
+Se i nodi del cluster eseguono versioni diverse di ONTAP, viene visualizzata la versione ONTAP più recente.
+
+* *Numero di nodi*
++
+Il numero di nodi che appartengono al cluster.
+
+* *Nome host o Indirizzo IP*
++
+L'FQDN, il nome breve o l'indirizzo IP della LIF di gestione del cluster utilizzata per la connessione al cluster.
+
+* *Spazio logico utilizzato*
++
+La dimensione reale dei dati memorizzati in tutti gli aggregati di questo cluster senza applicare i risparmi derivanti dall'utilizzo delle tecnologie di efficienza dello storage ONTAP.
+
+* *Personalità*
++
+Identifica se si tratta di un cluster configurato con All SAN Array.
+
+* *Numero di serie*
++
+Il numero di serie del cluster.
+
+* *Contatto*
++
+Le informazioni di contatto del cluster.
+
+* *Posizione*
++
+La posizione del cluster.
+
+

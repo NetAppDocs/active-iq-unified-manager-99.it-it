@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-protection-storage-virtual-machine-associations-page.html 
+sidebar: sidebar 
+keywords:  
+summary: La pagina Peers SVM consente di visualizzare le VM di storage esistenti tra le VM di storage di origine e di destinazione e di creare nuove VM di storage da utilizzare da parte delle applicazioni partner per creare relazioni SnapMirror e SnapVault. 
+---
+= Pagina peer SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Peers SVM consente di visualizzare le VM di storage esistenti tra le VM di storage di origine e di destinazione e di creare nuove VM di storage da utilizzare da parte delle applicazioni partner per creare relazioni SnapMirror e SnapVault.
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Crea*
++
+Apre la pagina Create Storage Virtual Machine Peers.
+
+* *Elimina*
++
+Consente di eliminare i peer delle macchine virtuali di storage selezionati.
+
+
+
+
+
+== Elenco dei peer delle macchine virtuali di storage
+
+L'elenco peer SVM visualizza in una tabella le associazioni VM di storage di origine e destinazione create e il tipo di relazione di protezione consentita per ciascuna associazione.
+
+* *Source Storage Virtual Machine*
++
+Visualizza il nome della SVM di origine.
+
+* *Cluster di origine*
++
+Visualizza il nome del cluster di origine.
+
+* *Destination Storage Virtual Machine*
++
+Visualizza il nome della SVM di destinazione.
+
+* *Cluster di destinazione*
++
+Visualizza il nome del cluster di destinazione.
+
+* *Tipo*
++
+Visualizza il tipo di relazione di protezione. I tipi di relazione sono SnapMirror o SnapVault.
+
+

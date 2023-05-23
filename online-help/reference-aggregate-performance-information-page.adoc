@@ -1,0 +1,87 @@
+---
+permalink: online-help/reference-aggregate-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Utilizzare la pagina aggregato/informazioni sulle prestazioni per visualizzare un elenco degli attributi fisici e logici dell"aggregato. Queste informazioni potrebbero essere utili per rispondere alle domande relative alle performance.' 
+---
+= Pagina aggregato/informazioni sulle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilizzare la pagina aggregato/informazioni sulle prestazioni per visualizzare un elenco degli attributi fisici e logici dell'aggregato. Queste informazioni potrebbero essere utili per rispondere alle domande relative alle performance.
+
+
+
+== Aggregare gli attributi
+
+* *Tipo*
++
+Il tipo di aggregato:
+
++
+** DISCO RIGIDO
+** Ibrido
++
+Combina HDD e SSD, ma Flash Pool non è stato attivato.
+
+** Ibrido (Flash Pool)
++
+Combina HDD e SSD ed è stato attivato Flash Pool.
+
+** SSD
+** SSD (FabricPool)
++
+Combina SSD e un Tier cloud
+
+** Disco rigido (FabricPool)
++
+Combina HDD e un Tier cloud
+
+** VMDisk (SDS)
++
+Dischi virtuali all'interno di una macchina virtuale
+
+** VMDisk (FabricPool)
++
+Combina dischi virtuali e un Tier cloud
+
+** LUN (FlexArray)
+
+
+* *Cluster*
++
+Il nome del cluster a cui appartiene l'aggregato. È possibile fare clic sul nome per visualizzare i dettagli del cluster nella pagina Cluster/Performance Explorer.
+
+* Nodo *
++
+Il nome del nodo a cui appartengono i dischi dell'aggregato. È possibile fare clic sul nome per visualizzare i dettagli del nodo nella pagina Node/Performance Explorer (Esplora nodi/prestazioni).
+
+* *Flash Pool*
++
+Se si tratta di un aggregato di Flash Pool: Sì o no
+
++
+Un aggregato Flash Pool è un aggregato ibrido costituito da SSD e HDD.
+
+* *FabricPool*
++
+Se si tratta di un aggregato FabricPool: Sì o No
+
++
+Un aggregato FabricPool è un aggregato costituito da SSD e un Tier cloud o HDD e un Tier cloud (a partire da ONTAP 9.8).
+
+* *Inactive Data Reporting*
++
+Se la funzionalità di reporting dei dati inattivi è attivata o disattivata su questo aggregato. Quando questa opzione è attivata, i volumi di questo aggregato visualizzano la quantità di dati cold nella pagina di inventario Performance/Volumes.
+
++
+Il valore in questo campo è "`N/A`" quando la versione di ONTAP non supporta il reporting dei dati inattivi.
+
+* *Spazio logico utilizzato*
++
+La dimensione reale dei dati memorizzati su questo aggregato senza applicare i risparmi derivanti dall'utilizzo delle tecnologie di efficienza dello storage ONTAP.
+
+

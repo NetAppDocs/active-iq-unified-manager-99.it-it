@@ -1,0 +1,27 @@
+---
+permalink: online-help/reference-performance-all-lifs-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vista Performance: All Network Interfaces (prestazioni: Tutte le interfacce di rete) visualizza una panoramica degli eventi relativi alle performance, dei dati e delle informazioni di configurazione per ciascuna interfaccia di rete monitorata da questa istanza di Unified Manager. Questa pagina consente di monitorare rapidamente le performance delle interfacce e di risolvere i problemi di performance e gli eventi di soglia.' 
+---
+= Performance (prestazioni): Vista All Network Interface (tutte le interfacce di rete)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista Performance: All Network Interfaces (prestazioni: Tutte le interfacce di rete) visualizza una panoramica degli eventi relativi alle performance, dei dati e delle informazioni di configurazione per ciascuna interfaccia di rete (LIF) monitorata da questa istanza di Unified Manager. Questa pagina consente di monitorare rapidamente le performance delle interfacce e di risolvere i problemi di performance e gli eventi di soglia.
+
+Per impostazione predefinita, gli oggetti nelle pagine di visualizzazione vengono ordinati in base alla criticità degli eventi. Gli oggetti con eventi critici vengono elencati per primi e gli oggetti con eventi di avviso vengono elencati per secondi. Ciò fornisce un'indicazione visiva immediata dei problemi che devono essere risolti.
+
+I controlli nella parte superiore della pagina consentono di selezionare una vista particolare (per lo stato, le prestazioni, la capacità e così via), eseguire ricerche per individuare oggetti specifici, creare e applicare filtri per restringere l'elenco dei dati visualizzati, aggiungere/rimuovere/riordinare le colonne della pagina, ed esportare i dati della pagina in un `.csv`, `.pdf`, o. `.xlsx` file. Dopo aver personalizzato la pagina, è possibile salvare i risultati come vista personalizzata e pianificare un report dei dati da generare e inviare via email a intervalli regolari.
+
+È possibile assegnare criteri di soglia delle performance a qualsiasi oggetto presente nelle pagine di inventario degli oggetti o cancellare i criteri di soglia utilizzando i pulsanti *Assign Performance Threshold Policy* e *Clear Performance Threshold Policy*.
+
+[NOTE]
+====
+Le interfacce elencate in questa pagina includono Data LIF, Cluster LIF, Node Management LIF e Intercluster LIF. Unified Manager non utilizza o visualizza le LIF di sistema.
+
+====
+Vedere xref:reference-lif-performance-fields.adoc[Campi relativi alle performance dell'interfaccia di rete] per la descrizione di tutti i campi di questa pagina.

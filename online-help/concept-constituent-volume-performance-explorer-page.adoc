@@ -1,0 +1,38 @@
+---
+permalink: online-help/concept-constituent-volume-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: La pagina Explorer volume/performance costituente fornisce informazioni dettagliate sulle prestazioni per il componente FlexGroup selezionato. 
+---
+= Pagina di esplorazione del volume/delle performance costituente
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Explorer volume/performance costituente fornisce informazioni dettagliate sulle prestazioni per il componente FlexGroup selezionato.
+
+La pagina Explorer volume/performance costituente consente di tenere traccia e confrontare le prestazioni dei componenti durante un periodo di tempo specifico, contribuendo alla risoluzione dei problemi e alla messa a punto delle prestazioni di un volume FlexGroup e dei relativi volumi costituenti.
+
+La funzionalità Visualizza e confronta consente di confrontare le prestazioni di questo volume costituente con:
+
+* l'aggregato su cui risiede questo volume costituente
+* La VM di storage su cui risiede questo volume costituente
+* Il volume FlexGroup a cui appartiene il volume costituente
+* altri volumi sullo stesso aggregato
+
+
+La pagina costitutiva Volume/Performance Explorer consente di:
+
+* Visualizza i problemi relativi alle soglie e i relativi dettagli
+* Tenere traccia e confrontare i dati relativi alle performance dei componenti
+* Analizzare e risolvere i problemi relativi alla soglia
+* Analizzare e risolvere i problemi relativi alle prestazioni
+
+
+[NOTE]
+====
+Per i volumi di data Protection (DP), vengono visualizzati solo i valori dei contatori per il traffico generato dall'utente.
+
+====

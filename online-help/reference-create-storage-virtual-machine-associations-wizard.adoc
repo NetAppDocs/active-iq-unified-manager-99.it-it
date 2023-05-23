@@ -1,0 +1,90 @@
+---
+permalink: online-help/reference-create-storage-virtual-machine-associations-wizard.html 
+sidebar: sidebar 
+keywords:  
+summary: La procedura guidata Crea peer di macchine virtuali di storage consente di eseguire il peer di macchine virtuali di storage di origine e destinazione da utilizzare nelle relazioni di protezione di SnapMirror e SnapVault. 
+---
+= Creazione guidata Storage Virtual Machine Peers
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La procedura guidata Crea peer di macchine virtuali di storage consente di eseguire il peer di macchine virtuali di storage di origine e destinazione da utilizzare nelle relazioni di protezione di SnapMirror e SnapVault.
+
+
+
+== Selezionare Source (origine)
+
+Il pannello Select Source (Seleziona origine) consente di selezionare la VM di origine, o la VM di storage primaria, nel peer della VM di storage.
+
+* *Qualsiasi*
++
+Consente di creare un peer tra un'origine VM di storage e una o più VM di destinazione o di storage secondario. Ciò significa che tutte le VM di storage esistenti che richiedono attualmente la protezione, nonché tutte le VM di storage create in futuro, sono dotate di un peering con la VM di storage di destinazione specificata. Ad esempio, è possibile eseguire il backup di applicazioni provenienti da diverse origini in posizioni diverse su una o più macchine virtuali di storage di destinazione in un'unica posizione.
+
+* *Singolo*
++
+Consente di eseguire il peer di una specifica VM di storage di origine con una o più VM di storage di destinazione. Ad esempio, se si forniscono servizi di storage a molti client i cui dati devono essere separati l'uno dall'altro, scegliere questa opzione per associare una specifica origine della VM di storage a una specifica destinazione della VM di storage assegnata solo a quel client.
+
+* *Nessuno (esterno)*
++
+Consente di creare un'associazione tra una VM di storage di origine e un volume flessibile esterno di una VM di storage di destinazione.
+
++
+** Macchina virtuale per lo storage
++
+Elenca i nomi delle VM di storage di origine disponibili
+
+** Cluster
++
+Elenca i cluster su cui si trovano ciascuna VM di storage
+
+
+
+* *Consentire questi tipi di relazioni*
++
+Consente di selezionare il tipo di relazione per l'associazione:
+
++
+** SnapMirror
++
+Specifica una relazione SnapMirror come tipo di peer. La selezione di questa opzione attiva la replica dei dati dalle origini selezionate alle destinazioni selezionate.
+
+** SnapVault
++
+Specifica una relazione SnapVault come tipo di peer. La selezione di questa opzione attiva i backup dalle posizioni primarie selezionate alle posizioni secondarie selezionate.
+
+
+
+
+
+
+
+== Selezionare Destinazioni di protezione
+
+Il pannello Select Protection Destinations della procedura guidata Create Storage Virtual Machine Peers consente di selezionare dove copiare o replicare i dati. È possibile creare un peer su una sola VM di storage di destinazione per cluster.
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Avanti*
++
+Consente di passare alla pagina successiva della procedura guidata.
+
+* *Indietro*
++
+Consente di tornare alla pagina precedente della procedura guidata.
+
+* *Fine*
++
+Applica le selezioni e crea l'associazione.
+
+* *Annulla*
++
+Elimina le selezioni e chiude la procedura guidata Create Storage Virtual Machine Peers.
+
+

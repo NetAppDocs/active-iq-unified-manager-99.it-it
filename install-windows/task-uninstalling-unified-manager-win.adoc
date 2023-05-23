@@ -1,0 +1,65 @@
+---
+permalink: install-windows/task-uninstalling-unified-manager-win.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile disinstallare Unified Manager utilizzando la procedura guidata programmi e funzionalità o eseguendo una disinstallazione automatica dall"interfaccia della riga di comando.' 
+---
+= Disinstallazione di Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+È possibile disinstallare Unified Manager utilizzando la procedura guidata programmi e funzionalità o eseguendo una disinstallazione automatica dall'interfaccia della riga di comando.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre dei privilegi di amministratore di Windows.
+* Tutti i cluster (origini dati) devono essere rimossi dal server Unified Manager prima di disinstallare il software.
+
+
+
+
+== Fasi
+
+. Disinstallare Unified Manager scegliendo una delle seguenti opzioni:
+
+
+[cols="2*"]
+|===
+| Per disinstallare Unified Manager da... | Quindi... 
+
+
+ a| 
+Wizard programmi e funzionalità
+ a| 
+. Accedere a *pannello di controllo* > *programmi e funzionalità*.
+. Selezionare Active IQ Unified Manager e fare clic su *Disinstalla*.
+
+
+
+
+ a| 
+Riga di comando
+ a| 
+. Accedere alla riga di comando di Windows utilizzando i privilegi di amministratore.
+. Accedere alla directory Active IQ Unified Manager ed eseguire il seguente comando: `+msiexec /x {A78760DB-7EC0-4305-97DB-E4A89CDFF4E1} /qn /l*v %systemdrive%\UmUnInstall.log+`
+
+
+|===
+Se il controllo dell'account utente (UAC) è attivato sul server e si è connessi come utente di dominio, è necessario utilizzare il metodo di disinstallazione dalla riga di comando.
+
+Unified Manager viene disinstallato dal sistema.
+
+. Disinstallare i seguenti pacchetti e dati di terze parti che non vengono rimossi durante la disinstallazione di Unified Manager:
++
+** Pacchetti di terze parti: JRE, MySQL, Microsoft Visual C& 43; 43; 2015 Redistributable e 7zip
+** Dati dell'applicazione MySQL generati da Unified Manager
+** Log delle applicazioni e contenuto della directory dei dati delle applicazioni
+
+
+

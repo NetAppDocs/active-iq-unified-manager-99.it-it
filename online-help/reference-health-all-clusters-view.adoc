@@ -1,0 +1,24 @@
+---
+permalink: online-help/reference-health-all-clusters-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vista Health: All Clusters (Salute: Tutti i cluster) consente di visualizzare le informazioni sullo stato di salute dei cluster monitorati.' 
+---
+= Salute: Vista di tutti i cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista Health: All Clusters (Salute: Tutti i cluster) consente di visualizzare le informazioni sullo stato di salute dei cluster monitorati.
+
+Per impostazione predefinita, gli oggetti nelle pagine di visualizzazione vengono ordinati in base alla criticità degli eventi. Gli oggetti con eventi critici vengono elencati per primi e gli oggetti con eventi di avviso vengono elencati per secondi. Ciò fornisce un'indicazione visiva immediata dei problemi che devono essere risolti. Ogni cluster nella griglia dei cluster dispone di collegamenti a Gestione di sistema di ONTAP. Questo collegamento consente di visualizzare la stessa relazione di protezione in Gestore di sistema di ONTAP. L'opzione di menu *Visualizza in System Manager* è disponibile come collegamento. Il collegamento *View in System Manager* è disponibile anche nella pagina dei dettagli di stato, performance e capacità del cluster.
+
+I controlli nella parte superiore della pagina consentono di selezionare una vista particolare (per lo stato, le prestazioni, la capacità e così via), eseguire ricerche per individuare oggetti specifici, creare e applicare filtri per restringere l'elenco dei dati visualizzati, aggiungere/rimuovere/riordinare le colonne della pagina, ed esportare i dati della pagina in un `.csv`, `.pdf`, o. `.xlsx` file. Dopo aver personalizzato la pagina, è possibile salvare i risultati come vista personalizzata e pianificare un report dei dati da generare e inviare via email a intervalli regolari.
+
+È possibile utilizzare il pulsante *Configurazione cluster* per modificare o aggiungere cluster a Active IQ Unified Manager. Vengono elencati tutti i cluster disponibili in Active IQ Unified Manager e ciascun collegamento al nome del cluster consente di accedere alla pagina Gestore di sistema di ONTAP per semplificare la navigazione.
+
+È possibile associare un cluster a un'annotazione predefinita utilizzando il pulsante *Annotate* (Annotazione).
+
+Vedere xref:reference-cluster-health-fields.adoc[Campi di integrità del cluster] per la descrizione di tutti i campi di questa pagina.

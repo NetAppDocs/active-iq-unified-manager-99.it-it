@@ -1,0 +1,16 @@
+---
+permalink: reporting/concept-report-work-flow.html 
+sidebar: sidebar 
+keywords:  
+summary: Struttura decisionale che descrive il flusso di lavoro del report. 
+---
+= Workflow dei report
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Struttura decisionale che descrive il flusso di lavoro del report.
+
+image::../media/reports-view-workflow.png[i report visualizzano il flusso di lavoro]

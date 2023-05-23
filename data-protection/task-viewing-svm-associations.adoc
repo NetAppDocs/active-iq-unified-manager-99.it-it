@@ -1,0 +1,30 @@
+---
+permalink: data-protection/task-viewing-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile utilizzare la pagina Peer di Storage VM per visualizzare i peer di storage VM esistenti e le relative proprietà e per determinare se sono necessarie ulteriori storage VM. 
+---
+= Visualizzazione dei peer di Storage VM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la pagina Peer di Storage VM per visualizzare i peer di storage VM esistenti e le relative proprietà e per determinare se sono necessarie ulteriori storage VM.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dell'applicazione o di amministratore dello storage.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Protection* > *Storage VM Peers*.
++
+Viene visualizzato l'elenco dei peer delle macchine virtuali di storage e delle relative proprietà.
+
+

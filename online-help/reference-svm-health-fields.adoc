@@ -1,0 +1,92 @@
+---
+permalink: online-help/reference-svm-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'I seguenti campi sono disponibili nella vista Health: All Storage VMS e possono essere utilizzati nelle visualizzazioni personalizzate e nei report.' 
+---
+= Campi di salute SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I seguenti campi sono disponibili nella vista Health: All Storage VMS e possono essere utilizzati nelle visualizzazioni personalizzate e nei report.
+
+* *Stato*
++
+Lo stato corrente della SVM. Lo stato può essere critico (image:../media/sev-critical-um60.png["Icona per la severità dell'evento – critico"]), errore (image:../media/sev-error-um60.png["Icona per la severità dell'evento – errore"]), Avviso (image:../media/sev-warning-um60.png["Icona per la severità dell'evento – avviso"]), o normale (image:../media/sev-normal-um60.png["Icona per la severità dell'evento – normale"]).
+
+* *Storage VM*
++
+Il nome della SVM.
+
+* *Stato*
++
+Lo stato amministrativo corrente di SVM. Lo stato può essere in esecuzione, arrestato, avviato o interrotto.
+
+* *Tipo di volume consentito*
++
+Il tipo di volume che è possibile creare in SVM. Il tipo può essere FlexVol o FlexVol/FlexGroup.
+
+* *Protocolli consentiti*
++
+Il tipo di protocolli che è possibile configurare su SVM. I protocolli disponibili sono FC/FCoE, iSCSI, HTTP, NDMP, NVMe, NFS e CIFS.
+
+* *Capacità dati disponibile*
++
+La capacità dati disponibile di tutti i volumi nella SVM.
+
+* *Capacità totale dei dati*
++
+La capacità totale dei dati di tutti i volumi nella SVM.
+
+* *Volume root*
++
+Il nome del volume root di SVM.
+
+* *Stato NIS*
++
+Stato del NIS (Network Information Service). Lo stato può essere Enabled (attivato), Disabled (Disattivato) o Not Configured (non configurato).
+
+* *Dominio NIS*
++
+Il nome di dominio NIS. Questa colonna è vuota quando il server NIS è disattivato o non è configurato.
+
+* *Stato DNS*
++
+Lo stato del DNS (Domain Name System). Lo stato può essere Enabled (attivato), Disabled (Disattivato) o Not Configured (non configurato).
+
+* *Dominio DNS*
++
+Il nome di dominio DNS.
+
+* *Ruolo di protezione*
++
+Lo stato di protezione delle VM di storage. Il ruolo può essere protetto, non protetto o di destinazione.
+
+* *Name Service Switch*
++
+Tipo di informazioni raccolte dagli host. I valori possibili sono file, LDAP o NIS.
+
+* *LDAP attivato*
++
+Se il protocollo LDAP è attivato o meno.
+
+* *Volumi massimi consentiti*
++
+Il numero massimo di volumi consentiti che è possibile configurare su SVM.
+
+* *Conteggio volumi*
++
+Il numero di volumi contenuti da SVM.
+
+* *Cluster*
++
+Il nome del cluster a cui appartiene l'SVM.
+
+* *FQDN cluster*
++
+Il nome di dominio completo (FQDN) del cluster.
+
+

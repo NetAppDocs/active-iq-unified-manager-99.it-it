@@ -1,0 +1,27 @@
+---
+permalink: online-help/reference-performance-all-svms-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vista Performance: All Storage VM (prestazioni: Tutte le macchine virtuali di storage) visualizza una panoramica degli eventi di performance, dei dati e delle informazioni di configurazione per ciascuna macchina virtuale di storage (SVM) monitorata da un"istanza di Unified Manager. In questo modo è possibile monitorare rapidamente le performance delle SVM e risolvere i problemi di performance e gli eventi di soglia.' 
+---
+= Performance: Vista di tutte le VM di storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista Performance: All Storage VM (prestazioni: Tutte le macchine virtuali dello storage) visualizza una panoramica degli eventi di performance, dei dati e delle informazioni di configurazione per ciascuna macchina virtuale dello storage (SVM) monitorata da un'istanza di Unified Manager. In questo modo è possibile monitorare rapidamente le performance delle SVM e risolvere i problemi di performance e gli eventi di soglia.
+
+Per impostazione predefinita, gli oggetti nelle pagine di visualizzazione vengono ordinati in base alla criticità degli eventi. Gli oggetti con eventi critici vengono elencati per primi e gli oggetti con eventi di avviso vengono elencati per secondi. Ciò fornisce un'indicazione visiva immediata dei problemi che devono essere risolti.
+
+I controlli nella parte superiore della pagina consentono di selezionare una vista particolare (per lo stato, le prestazioni, la capacità e così via), eseguire ricerche per individuare oggetti specifici, creare e applicare filtri per restringere l'elenco dei dati visualizzati, aggiungere/rimuovere/riordinare le colonne della pagina, ed esportare i dati della pagina in un `.csv`, `.pdf`, o. `.xlsx` file. Dopo aver personalizzato la pagina, è possibile salvare i risultati come vista personalizzata e pianificare un report dei dati da generare e inviare via email a intervalli regolari.
+
+È possibile assegnare criteri di soglia delle performance a qualsiasi oggetto presente nelle pagine di inventario degli oggetti o cancellare i criteri di soglia utilizzando i pulsanti *Assign Performance Threshold Policy* e *Clear Performance Threshold Policy*.
+
+[NOTE]
+====
+Le SVM elencate in questa pagina includono solo SVM di dati e cluster. Unified Manager non utilizza o visualizza le SVM di amministrazione o nodo.
+
+====
+Vedere xref:reference-svm-performance-fields.adoc[Campi di performance SVM] per la descrizione di tutti i campi di questa pagina.

@@ -1,0 +1,84 @@
+---
+permalink: online-help/reference-iops-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'I grafici dei contatori IOPS visualizzano il numero di operazioni di input/output elaborate al secondo dall"oggetto di storage selezionato.' 
+---
+= Tabelle dei contatori delle performance IOPS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I grafici dei contatori IOPS visualizzano il numero di operazioni di input/output elaborate al secondo dall'oggetto di storage selezionato.
+
+La finestra a comparsa visualizzata quando si sposta il cursore nell'area del grafico mostra i valori del contatore in orari specifici.
+
+Quando viene visualizzato nella vista Zoom, i grafici IOPS del volume e del LUN visualizzano anche le impostazioni della soglia massima e minima di throughput della qualità del servizio (QoS), se configurate. I grafici IOPS/TB visualizzano le impostazioni di picco QoS e di soglia di throughput previsto, se sono configurate policy QoS adattive.
+
+[NOTE]
+====
+In alcuni casi, quando si utilizzano criteri QoS adattivi, i valori Max e min vengono impostati sullo stesso valore nei grafici. Ciò si verifica su volumi di grandi dimensioni in cui viene utilizzato uno spazio molto ridotto o su volumi molto piccoli.
+
+====
+Quando si visualizza un volume o un LUN che condivide gli IOPS di una policy QoS condivisa, viene visualizzata una riga per "`Total workload IOPS`" per mostrare gli IOPS utilizzati da tutti gli altri carichi di lavoro che condividono questa policy.
+
+Nella parte inferiore della pagina del grafico vengono visualizzate le informazioni relative agli IOPS minimi, massimi, medi e 95° percentile per questo oggetto nell'intervallo di tempo selezionato.
+
+Sono disponibili quattro tipi di carte IOPS:
+
+
+
+== IOPS - grafico contatore totale
+
+Visualizza il numero di operazioni di input/output elaborate al secondo.
+
+Quando viene visualizzato per un nodo, selezionando "`Total`" (totale) vengono visualizzati gli IOPS per i dati che si spostano attraverso questo nodo che possono risiedere sul nodo locale o remoto e selezionando "`Total (Local)`" (totale (locale)) vengono visualizzati gli IOPS per i dati che risiedono solo sul nodo corrente.
+
+
+
+== IOPS - grafico del contatore dei guasti
+
+Visualizza gli stessi dati IOPS separati in lettura, scrittura e altri IOPS.
+
+Questa opzione di grafico si applica quando l'oggetto selezionato è una SVM, un nodo, un aggregato, un volume o un LUN.
+
+Quando viene visualizzato per un nodo, selezionando "`Breakdown`" viene visualizzata la suddivisione IOPS per i dati che si spostano attraverso questo nodo che potrebbe risiedere sul nodo locale o remoto e selezionando "`Breakdown (Local)`" viene visualizzata la suddivisione IOPS per i dati che risiedono solo sul nodo corrente.
+
+
+
+== IOPS - grafico dei contatori dei protocolli
+
+Visualizza gli stessi dati IOPS, ma per le SVM i dati delle performance sono separati in singoli componenti per il traffico dei protocolli CIFS, NFS, FCP, NVMe e iSCSI.
+
+
+
+== IOPS/TB - grafico contatore totale
+
+Visualizza il numero di operazioni di input/output elaborate al secondo in base allo spazio logico totale consumato dal volume, in terabyte. Detto anche densità di i/o, questo contatore misura la quantità di performance che possono essere fornite da una determinata quantità di capacità di storage.
+
+Questa opzione di grafico è disponibile solo quando l'oggetto selezionato è un volume. Visualizza i dati sulle prestazioni solo quando la capacità logica utilizzata dal volume è maggiore o uguale a 128 GB. I gap vengono visualizzati nel grafico quando la capacità utilizzata scende al di sotto di 128 GB durante il periodo di tempo selezionato.
+
+
+
+== Pulsante *Zoom View*
+
+Visualizza una vista ingrandita dei dati del contatore.
+
+* Eventi
++
+Il verificarsi di eventi critici, di errore, di avviso e informativi è indicato nelle righe temporali sopra i grafici.
+
+* Soglie
++
+La linea orizzontale tratteggiata indica il valore di soglia dell'avviso di utilizzo impostato in Unified Manager.
+
++
+La linea rossa fissa indica il valore della soglia critica di utilizzo impostato in Unified Manager.
+
+* Contatori
++
+I contatori nel riquadro di sinistra indicano i valori dei contatori visualizzati. Deselezione o selezione di image:../media/eye-icon.gif[""] Che è associato a un contatore nasconde e mostra le informazioni del contatore dal grafico e può aiutare nel confronto degli IOPS degli oggetti.
+
+

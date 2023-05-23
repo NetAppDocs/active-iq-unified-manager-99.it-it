@@ -1,0 +1,22 @@
+---
+permalink: online-help/reference-health-all-svms-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vista Health: All Storage VMS consente di visualizzare informazioni dettagliate sulle macchine virtuali di storage che si stanno monitorando.' 
+---
+= Health: Vista di tutte le VM di storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista Health: All Storage VMS consente di visualizzare informazioni dettagliate sulle macchine virtuali di storage (SVM) monitorate.
+
+Per impostazione predefinita, gli oggetti nelle pagine di visualizzazione vengono ordinati in base alla criticità degli eventi. Gli oggetti con eventi critici vengono elencati per primi e gli oggetti con eventi di avviso vengono elencati per secondi. Ciò fornisce un'indicazione visiva immediata dei problemi che devono essere risolti. Ogni VM di storage nella griglia delle VM di storage ha collegamenti a Gestione di sistema di ONTAP. Questo collegamento consente di visualizzare la stessa relazione di protezione in Gestore di sistema di ONTAP.
+
+I controlli nella parte superiore della pagina consentono di selezionare una vista particolare (per lo stato, le prestazioni, la capacità e così via), eseguire ricerche per individuare oggetti specifici, creare e applicare filtri per restringere l'elenco dei dati visualizzati, aggiungere/rimuovere/riordinare le colonne della pagina, ed esportare i dati della pagina in un `.csv`, `.pdf`, o. `.xlsx` file. Dopo aver personalizzato la pagina, è possibile salvare i risultati come vista personalizzata e pianificare un report dei dati da generare e inviare via email a intervalli regolari.
+
+È possibile associare una SVM a un'annotazione predefinita utilizzando il pulsante *Annotate* (Annotazione).
+
+Vedere xref:reference-svm-health-fields.adoc[Campi di salute SVM] per la descrizione di tutti i campi di questa pagina.

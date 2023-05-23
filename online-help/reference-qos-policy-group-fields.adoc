@@ -1,0 +1,101 @@
+---
+permalink: online-help/reference-qos-policy-group-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'I seguenti campi sono disponibili nella pagina Performance: QoS Policy Groups e possono essere utilizzati nelle visualizzazioni personalizzate e nei report.' 
+---
+= Campi del gruppo di policy QoS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I seguenti campi sono disponibili nella pagina Performance: QoS Policy Groups e possono essere utilizzati nelle visualizzazioni personalizzate e nei report.
+
+* *QoS Policy Group*
++
+Il nome del gruppo di criteri QoS.
+
++
+Per le policy di NetApp Service Level Manager (NSLM) 1.3 che sono state importate in Unified Manager 9.7 o versione successiva, il nome visualizzato qui include il nome SVM e altre informazioni che non si trovano nel nome quando il livello del servizio Performance è stato definito in NSLM. Ad esempio, il nome "`NSLM_vs6_Performance_2_0`" indica che si tratta del criterio PSL "`Performance`" definito dal sistema NSLM creato su SVM "`vs6`" con una latenza prevista di "`2 ms/op`".
+
+* *Cluster*
++
+Il cluster a cui appartiene il gruppo di criteri QoS. È possibile fare clic sul nome del cluster per accedere alla pagina dei dettagli del cluster.
+
+* *FQDN cluster*
++
+Il nome di dominio completo (FQDN) del cluster.
+
+* *SVM*
++
+La macchina virtuale di storage (SVM) a cui appartiene il gruppo di criteri QoS. È possibile fare clic sul nome SVM per accedere alla pagina dei dettagli di SVM.
+
++
+[NOTE]
+====
+Questo campo è vuoto se il criterio QoS è stato creato sulla SVM amministrativa, poiché questo tipo di SVM rappresenta il cluster.
+
+====
+* *Throughput minimo*
++
+Il throughput minimo, in IOPS, garantito dal gruppo di policy.
+
++
+Per le policy adattive, si tratta degli IOPS minimi previsti per TB allocati al volume o al LUN, in base alla dimensione allocata dell'oggetto di storage.
+
+* *Throughput massimo*
++
+Il throughput, in IOPS e/o MB/s, che il gruppo di criteri non deve superare. Quando questo campo è vuoto, significa che il massimo definito in ONTAP è infinito.
+
++
+Per le policy adattive, si tratta del massimo (picco) di IOPS possibili per TB allocati al volume o al LUN, in base alla dimensione _allocata_ dell'oggetto di storage o alla dimensione _utilizzata_ dell'oggetto di storage.
+
+* *IOPS minimi assoluti*
++
+Per le policy adattive si tratta del valore IOPS minimo assoluto utilizzato come override quando gli IOPS previsti sono inferiori a questo valore.
+
+* *Dimensione blocco*
++
+Dimensione del blocco specificata per il criterio adattivo QoS.
+
+* *Allocazione minima*
++
+Se si utilizza "`spazio allocato`" o "`spazio utilizzato`" per determinare gli IOPS di throughput massimo (picco).
+
+* *Latenza prevista*
++
+Latenza media prevista per le operazioni di input/output dello storage.
+
+* *Condiviso*
++
+Per le policy QoS tradizionali, se i valori di throughput definiti nel gruppo di policy sono condivisi tra più oggetti.
+
+* *Oggetti associati*
++
+Il numero di workload assegnati al gruppo di policy QoS.
+
+
+
+È possibile fare clic sul pulsante Expand (Espandi) (image:../media/chevron-down.gif[""]) Accanto a QoS Policy Group Name (Nome gruppo policy QoS) per visualizzare ulteriori dettagli sul gruppo di policy.
+
+* *Capacità allocata*
++
+La quantità di spazio attualmente utilizzata dagli oggetti del gruppo di criteri QoS.
+
+* *Oggetti associati*
++
+Il numero di workload assegnati al gruppo di policy QoS, separati in volumi e LUN.
+
++
+È possibile fare clic sul numero per accedere a una pagina che fornisce ulteriori dettagli sui volumi o sui LUN selezionati.
+
+* *Eventi*
++
+Se uno o più oggetti assegnati al gruppo di criteri QoS hanno causato una violazione del criterio QoS, l'icona dell'indicatore di evento identifica la gravità dell'evento (critico, errore o avviso) e visualizza un messaggio di errore.
+
++
+È possibile fare clic sul messaggio per accedere alla pagina Eventi che viene filtrata e visualizzare gli oggetti coinvolti nell'evento.
+
+

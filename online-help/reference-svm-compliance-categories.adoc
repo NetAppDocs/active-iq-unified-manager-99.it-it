@@ -1,0 +1,107 @@
+---
+permalink: online-help/reference-svm-compliance-categories.html 
+sidebar: sidebar 
+keywords: storage VM compliance 
+summary: Questa tabella descrive i criteri di conformità della sicurezza della macchina virtuale dello storage che Unified Manager valuta, i consigli di NetApp e se il parametro influisce sulla determinazione generale della SVM che presenta un reclamo o meno. 
+---
+= Categorie di conformità SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Questa tabella descrive i criteri di conformità della sicurezza SVM (Storage Virtual Machine) che Unified Manager valuta, i consigli di NetApp e se il parametro influisce sulla determinazione generale della SVM che presenta un reclamo o meno.
+
+[cols="4*"]
+|===
+| Parametro | Descrizione | Consiglio | Influisce sulla conformità SVM 
+
+
+ a| 
+Log di audit
+ a| 
+Indica se la registrazione dell'audit è attivata o disattivata.
+ a| 
+Attivato
+ a| 
+Sì
+
+
+
+ a| 
+Impostazioni SSH non sicure
+ a| 
+Indica se SSH utilizza cifrari non sicuri, ad esempio cifrari che iniziano con `cbc*`.
+ a| 
+No
+ a| 
+Sì
+
+
+
+ a| 
+Banner di accesso
+ a| 
+Indica se il banner di accesso è attivato o disattivato per gli utenti che accedono alle SVM sul sistema.
+ a| 
+Attivato
+ a| 
+Sì
+
+
+
+ a| 
+Crittografia LDAP
+ a| 
+Indica se la crittografia LDAP è attivata o disattivata.
+ a| 
+Attivato
+ a| 
+No
+
+
+
+ a| 
+Autenticazione NTLM
+ a| 
+Indica se l'autenticazione NTLM è attivata o disattivata.
+ a| 
+Attivato
+ a| 
+No
+
+
+
+ a| 
+Firma del payload LDAP
+ a| 
+Indica se la firma del payload LDAP è attivata o disattivata.
+ a| 
+Attivato
+ a| 
+No
+
+
+
+ a| 
+Impostazioni CHAP
+ a| 
+Indica se CHAP è attivato o disattivato.
+ a| 
+Attivato
+ a| 
+No
+
+
+
+ a| 
+Kerberos V5
+ a| 
+Indica se l'autenticazione Kerberos V5 è attivata o disattivata.
+ a| 
+Attivato
+ a| 
+No
+
+|===

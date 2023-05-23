@@ -1,0 +1,70 @@
+---
+permalink: api-automation/concept-events-api.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi e le API di sistema nella categoria server di gestione consentono di recuperare gli eventi generati per i cluster monitorati nel data center e visualizzare i dettagli dell"istanza rispettivamente nell"ambiente Active IQ Unified Manager.' 
+---
+= Visualizzazione di eventi e dettagli di sistema
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il `events` e. `system` API in `management-server` La categoria consente di recuperare gli eventi generati per i cluster monitorati nel data center e visualizzare i dettagli dell'istanza rispettivamente nell'ambiente Active IQ Unified Manager.
+
+
+
+== Visualizzazione degli eventi
+
+Utilizzando `/management-server/events` API, puoi eseguire query sugli eventi nel tuo data center, inclusi i dati storici. Utilizzare i filtri integrati, ad esempio nome, livello di impatto, area di impatto, severità, stato, nome della risorsa e tipo di risorsa, per visualizzare eventi specifici. I parametri relativi al tipo di risorsa e all'area restituiscono informazioni sull'oggetto di storage in cui si è verificato l'evento e l'area di impatto restituisce le informazioni relative al problema per cui viene generato l'evento, ad esempio disponibilità, capacità, configurazione, sicurezza, protezione e performance.
+
+È inoltre possibile utilizzare la chiave evento per eseguire query sui dettagli di un evento specifico ed eseguire il successivo set di operazioni sulle risorse.
+
+[cols="4*"]
+|===
+| Categoria | Verbo HTTP | Percorso | Descrizione 
+
+
+ a| 
+server di gestione
+ a| 
+OTTIENI
+ a| 
+`/management-server/events`
+ a| 
+Il corpo della risposta è costituito dai dettagli dell'evento degli eventi interrogati nel data center.
+
+
+
+ a| 
+server di gestione
+ a| 
+OTTIENI
+ a| 
+`+/management-server/events/{key}+`
+ a| 
+Eseguire questa API se si desidera eseguire una query su un determinato evento. Inserire la chiave evento del lavoro per visualizzare i dettagli. Il corpo della risposta è costituito dai dettagli dell'evento.
+
+|===
+
+
+== Visualizzazione dei dettagli del sistema
+
+Utilizzando `/management-server/system` API, è possibile eseguire query sui dettagli specifici dell'istanza dell'ambiente Unified Manager. L'API restituisce informazioni sul prodotto e sui servizi, ad esempio la versione di Unified Manager installata nel sistema, UUID, nome del vendor, sistema operativo host e nome, Descrizione e stato dei servizi in esecuzione sull'istanza di Unified Manager.
+
+[cols="4*"]
+|===
+| Categoria | Verbo HTTP | Percorso | Descrizione 
+
+
+ a| 
+server di gestione
+ a| 
+OTTIENI
+ a| 
+`/management-server/system`
+ a| 
+Non è richiesto alcun parametro di input per l'esecuzione di questa API. Per impostazione predefinita, vengono restituiti i dettagli di sistema dell'istanza corrente di Unified Manager.
+
+|===

@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-network-interface-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Utilizzare la pagina Network Interface/Performance Information (informazioni sulle prestazioni/interfaccia di rete) per visualizzare un elenco degli attributi configurati dell"interfaccia di rete (LIF). Queste informazioni potrebbero essere utili per rispondere alle domande relative alle performance.' 
+---
+= Pagina Network Interface/Performance Information
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilizzare la pagina Network Interface/Performance Information per visualizzare un elenco degli attributi configurati dell'interfaccia di rete (LIF). Queste informazioni potrebbero essere utili per rispondere alle domande relative alle performance.
+
+
+
+== Attributi dell'interfaccia di rete
+
+* *Indirizzo IP*
++
+L'indirizzo IPv4 o IPv6 assegnato al LIF. A una LIF possono essere assegnati più indirizzi IP.
+
+* *Ruolo*
++
+Il ruolo determina il tipo di traffico supportato dalla LIF.
+
++
+I LIF possono avere uno dei seguenti ruoli:
+
++
+** Dati
+** Cluster
+** Gestione dei nodi
+** Intercluster
+
+
+* *Gruppo di failover*
++
+Il nome del gruppo di failover assegnato all'interfaccia di rete.
+
++
+Questo campo si applica solo alle LIF di rete, non ALLE LIF SAN (FC/ISCSI) e NVMe.
+
+* *Policy di failover*
++
+Il nome del criterio di failover assegnato al LIF.
+
++
+Questo campo si applica solo alle LIF di rete, non ALLE LIF SAN (FC/ISCSI) e NVMe.
+
+* *Porta home*
++
+Il nome del nodo e della porta definiti come porta home per questa interfaccia. È possibile fare clic sul nome per visualizzare i dettagli della porta nella pagina Port/Performance Explorer (Esplora porte/prestazioni).
+
+* *Porta corrente*
++
+Il nome del nodo e della porta su cui è attualmente ospitata l'interfaccia. È possibile fare clic sul nome per visualizzare i dettagli della porta nella pagina Port/Performance Explorer (Esplora porte/prestazioni).
+
+

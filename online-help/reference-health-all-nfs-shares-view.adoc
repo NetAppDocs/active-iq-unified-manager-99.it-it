@@ -1,0 +1,22 @@
+---
+permalink: online-help/reference-health-all-nfs-shares-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vista Salute: Tutte le condivisioni NFS visualizza informazioni sulle condivisioni NFS, ad esempio il relativo stato, il percorso associato al volume (volumi FlexGroup o volumi FlexVol), i livelli di accesso dei client alle condivisioni NFS e la policy di esportazione definita per i volumi esportati.' 
+---
+= Health: Vista di tutte le condivisioni NFS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista Salute: Tutte le condivisioni NFS visualizza informazioni sulle condivisioni NFS, ad esempio il relativo stato, il percorso associato al volume (volumi FlexGroup o volumi FlexVol), i livelli di accesso dei client alle condivisioni NFS e la policy di esportazione definita per i volumi esportati.
+
+Per impostazione predefinita, gli oggetti di questa pagina vengono ordinati in base allo stato. Gli oggetti con errori vengono elencati per primi e gli oggetti con stato normale vengono elencati di seguito. Ciò fornisce un'indicazione visiva immediata dei problemi che devono essere risolti.
+
+I controlli nella parte superiore della pagina consentono di selezionare una vista particolare (per lo stato, le prestazioni, la capacità e così via), eseguire ricerche per individuare oggetti specifici, creare e applicare filtri per restringere l'elenco dei dati visualizzati, aggiungere/rimuovere/riordinare le colonne della pagina, ed esportare i dati della pagina in un `.csv`, `.pdf`, o. `.xlsx` file. Dopo aver personalizzato la pagina, è possibile salvare i risultati come vista personalizzata e pianificare un report dei dati da generare e inviare via email a intervalli regolari.
+
+Se si desidera analizzare la latenza e il throughput di un oggetto specifico, fare clic sull'icona Altro image:../media/more-icon.gif[""], Quindi *Analyze workload* ed è possibile visualizzare i grafici relativi a performance e capacità nella pagina workload Analysis.
+
+Vedere xref:reference-nfs-shares-health-fields.adoc[NFS condivide i campi di salute] per la descrizione di tutti i campi di questa pagina.

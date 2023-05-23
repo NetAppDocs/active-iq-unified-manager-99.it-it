@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-health-thresholds-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile utilizzare la pagina Health Thresholds appropriata per configurare i valori globali delle soglie di integrità per aggregati e volumi e configurare i valori globali di avviso di ritardo e soglia di errore per le relazioni di protezione non gestite. 
+---
+= Descrizione delle pagine relative alle soglie di integrità
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la pagina Health Thresholds appropriata per configurare i valori globali delle soglie di integrità per aggregati e volumi e configurare i valori globali di avviso di ritardo e soglia di errore per le relazioni di protezione non gestite.

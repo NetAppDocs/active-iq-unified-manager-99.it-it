@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-security-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile attivare o disattivare il pannello sicurezza nella dashboard di Active IQ Unified Manager. Una volta attivata, è possibile personalizzare le impostazioni per il monitoraggio della conformità e gli eventi di sicurezza e le azioni di gestione pertinenti. 
+---
+= Dashboard di sicurezza
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile attivare o disattivare il pannello sicurezza nella dashboard di Active IQ Unified Manager. Una volta attivata, è possibile personalizzare le impostazioni per il monitoraggio della conformità e gli eventi di sicurezza e le azioni di gestione pertinenti.
+
+[NOTE]
+====
+Solo gli utenti con ruolo di amministratore possono modificare queste impostazioni.
+
+====
+I criteri di sicurezza per i cluster, le macchine virtuali di storage e i volumi ONTAP vengono valutati in base ai consigli definiti nella Guida per la protezione avanzata di NetApp per ONTAP 9. Il pannello di sicurezza sul dashboard visualizza lo stato di conformità della sicurezza di cluster, storage VM e volumi. L'attivazione di questa funzione genera anche eventi di sicurezza per qualsiasi cluster o storage VM che presenta violazioni della sicurezza.
+
+
+
+== Personalizzazione delle impostazioni
+
+Attivando questa funzione, è possibile personalizzare le impostazioni per il monitoraggio della conformità in base all'ambiente ONTAP. Queste impostazioni attivano gli eventi di sicurezza e le azioni di gestione pertinenti. Attenersi alla seguente procedura:
+
+. Fare clic su *Personalizza*. Viene visualizzata la finestra a comparsa Customize Security Dashboard Settings (Personalizza impostazioni dashboard di protezione).
+. Per attivare o disattivare le impostazioni personalizzate per i cluster ONTAP, espandere la selezione *Impostazioni generali* per i cluster. Per informazioni sulle opzioni di personalizzazione della conformità del cluster, vedere xref:reference-cluster-compliance-categories.adoc[Categorie di compliance del cluster].
+. Per attivare o disattivare le impostazioni personalizzate per le VM di storage, espandere la selezione *General Settings* (Impostazioni generali) per le VM di storage. Per informazioni sulle opzioni di personalizzazione della conformità delle macchine virtuali dello storage, vedere xref:reference-svm-compliance-categories.adoc[Categorie di conformità delle VM di storage].
+. È inoltre possibile specificare se utilizzare il trasporto HTTPS per l'invio di messaggi AutoSupport da ONTAP.
+. Se si abilitano le impostazioni di autenticazione, vengono generati avvisi da Unified Manager per l'utente amministratore predefinito di ONTAP.
+

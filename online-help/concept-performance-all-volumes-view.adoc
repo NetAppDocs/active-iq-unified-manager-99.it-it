@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-performance-all-volumes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vista performance: All Volumes (prestazioni: Tutti i volumi) visualizza una panoramica degli eventi relativi alle performance, dei dati dei contatori e delle informazioni di configurazione per ciascun volume FlexVol e FlexGroup monitorato da un"istanza di Unified Manager. In questo modo è possibile monitorare rapidamente le performance dei volumi e risolvere i problemi di performance e gli eventi di soglia.' 
+---
+= Performance (prestazioni): Vista di tutti i volumi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista performance: All Volumes (prestazioni: Tutti i volumi) visualizza una panoramica degli eventi relativi alle performance, dei dati dei contatori e delle informazioni di configurazione per ciascun volume FlexVol e FlexGroup monitorato da un'istanza di Unified Manager. In questo modo è possibile monitorare rapidamente le performance dei volumi e risolvere i problemi di performance e gli eventi di soglia.
+
+Per impostazione predefinita, gli oggetti nelle pagine di visualizzazione vengono ordinati in base alla criticità degli eventi. Gli oggetti con eventi critici vengono elencati per primi e gli oggetti con eventi di avviso vengono elencati per secondi. Ciò fornisce un'indicazione visiva immediata dei problemi che devono essere risolti.
+
+I controlli nella parte superiore della pagina consentono di selezionare una vista particolare (per lo stato, le prestazioni, la capacità e così via), eseguire ricerche per individuare oggetti specifici, creare e applicare filtri per restringere l'elenco dei dati visualizzati, aggiungere/rimuovere/riordinare le colonne della pagina, ed esportare i dati della pagina in un `.csv`, `.pdf`, o. `.xlsx` file. Dopo aver personalizzato la pagina, è possibile salvare i risultati come vista personalizzata e pianificare un report dei dati da generare e inviare via email a intervalli regolari.
+
+È possibile assegnare criteri di soglia delle performance a qualsiasi oggetto presente nelle pagine di inventario degli oggetti o cancellare i criteri di soglia utilizzando i pulsanti *Assign Performance Threshold Policy* e *Clear Performance Threshold Policy*.
+
+Se si desidera analizzare la latenza e il throughput di un oggetto specifico, fare clic sull'icona Altro image:../media/more-icon.gif[""], Quindi *Analyze workload* ed è possibile visualizzare i grafici relativi a performance e capacità nella pagina workload Analysis.
+
+[NOTE]
+====
+Per i volumi di data Protection (DP), vengono visualizzati solo i valori dei contatori per il traffico generato dall'utente.
+
+====
+[NOTE]
+====
+I volumi root non vengono visualizzati in questa pagina.
+
+====
+Vedere xref:reference-volume-performance-fields.adoc[Campi relativi alle performance dei volumi] per la descrizione di tutti i campi di questa pagina.
