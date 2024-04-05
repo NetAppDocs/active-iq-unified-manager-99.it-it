@@ -4884,21 +4884,6 @@
   <block id="54cee202b784163d7cdf325cdd6aa6c6" category="sidebar">Installazione rapida per VMware vSphere</block>
   <block id="a63af8d4197dd6c65eaa56176a1f0040" category="sidebar">Installazione rapida per Linux</block>
   <block id="b107f1742bfa32d7247ebf557550e2b5" category="sidebar">Installazione rapida per Windows</block>
-  <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">Note di rilascio</block>
-  <block id="828adfb3faf6bb0d6a86602f92d97f36" category="sidebar">Installare e configurare Unified Manager</block>
-  <block id="e53d36a21edd215027333eb7ea60fbc1" category="sidebar">Installazione e aggiornamento su sistemi VMware vSphere</block>
-  <block id="e16bdcc955b9441255836a75b797d710" category="sidebar">Installazione e aggiornamento su sistemi Linux</block>
-  <block id="5088a593884b9f5b6d52f0765c1c1554" category="sidebar">Installazione e aggiornamento su sistemi Windows</block>
-  <block id="40a3a0e70dc43e9efc5b6e90644739dd" category="sidebar">Configurare Unified Manager</block>
-  <block id="d8be01b779b72fb7ad353d45426e7fe3" category="sidebar">Monitoraggio delle performance</block>
-  <block id="eb7e776ba84f97e32ca2522829847d83" category="sidebar">Soglie di performance</block>
-  <block id="e4b3ba4cc2976d5d2c21b446db787620" category="sidebar">Performance del cluster</block>
-  <block id="13b1a36194bc49ac73c5077e1c1f6dd7" category="sidebar">Gruppo di criteri QoS</block>
-  <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">Più risorse</block>
-  <block id="aa193eacf5a35a85044e44de3fa9c91a" category="sidebar">Video di Unified Manager</block>
-  <block id="197833bfff97d501603036a0febb7a95" category="sidebar">Blog di Unified Manager</block>
-  <block id="c0fd3a67a0f9d526734eae8cf8142cb4" category="sidebar">Documentazione per la versione più recente di Active IQ Unified Manager</block>
-  <block id="85f73dd16ea214346164b0deea26773b" category="sidebar">Unified Manager</block>
   <block id="09d454f0bf432593d99fbfd84c9f9293" category="sidebar">Eseguire attività amministrative e di configurazione</block>
   <block id="d549fcac9e4340e7fb3d154a339f9c13" category="sidebar">Proteggere e ripristinare i dati</block>
   <block id="63c702324d7a2f1acfb2291776c09e62" category="sidebar">Gestione e monitoraggio delle relazioni di protezione (data Protection)</block>
@@ -13112,4 +13097,7 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="5c54cb8f927a6c5a90622e1c7bd0bda5" category="paragraph">NTP</block>
+  <block id="4a8598febd97e32d0698051cd71f02fa" category="paragraph">123/UDP</block>
+  <block id="cb2a1ba65000d6677f2856e06530ac31" category="paragraph">Utilizzato per sincronizzare l'ora sul server Unified Manager con un server di riferimento orario NTP esterno. (Solo sistemi VMware)</block>
 </blocks>
