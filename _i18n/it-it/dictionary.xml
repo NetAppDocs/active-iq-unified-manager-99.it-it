@@ -10295,7 +10295,6 @@
   <block id="b26b53cf6810080df88192bbe06ef9ae" category="image-alt">tabelle dei contatori di spazio per l'intestazione</block>
   <block id="dea6a44f1acbd73729580434b2cd1271" category="list-text">Se si desidera visualizzare uno dei grafici in un formato a dimensione intera, fare clic su *Zoom View* (Vista zoom).</block>
   <block id="227f5acbef95998ccbfd9c680d0dab46" category="paragraph">In questo modo è possibile aprire più diagrammi di contatore in una finestra separata per confrontare i valori di capacità delle performance utilizzati con i valori IOPS o Mbps nello stesso intervallo di tempo.</block>
-  <block id="91d9102f2b20d2487525cb47bf7d79a5" category="summary">Documentazione per Active IQ Unified Manager, documenti AIQUM, documenti UM</block>
   <block id="4a58c6ba2ac7cf0f2cd001d223b14e50" category="doc">Documentazione Active IQ Unified Manager</block>
   <block id="2eae025ea973517628652d442af14e33" category="summary">Gli utenti Windows possono scaricare e installare uno strumento per recuperare il pacchetto di supporto dal server Unified Manager. È possibile inviare il pacchetto di supporto al supporto tecnico per una diagnosi più dettagliata di un problema. FileZilla o WinSCP sono esempi di strumenti che è possibile utilizzare.</block>
   <block id="b556355f557258f29b4f65f49802f628" category="doc">Recupero del bundle di supporto utilizzando un client Windows</block>
@@ -13100,4 +13099,20 @@
   <block id="5c54cb8f927a6c5a90622e1c7bd0bda5" category="paragraph">NTP</block>
   <block id="4a8598febd97e32d0698051cd71f02fa" category="paragraph">123/UDP</block>
   <block id="cb2a1ba65000d6677f2856e06530ac31" category="paragraph">Utilizzato per sincronizzare l'ora sul server Unified Manager con un server di riferimento orario NTP esterno. (Solo sistemi VMware)</block>
+  <block id="67fde88ecdbd1fc85837595186b984a3" category="sidebar">Active IQ Unified Manager (Unified Manager, in precedenza OnCommand Unified Manager) consente di monitorare e gestire lo stato di salute e le performance dei sistemi storage ONTAP da una singola interfaccia. Questa libreria di documentazione include informazioni sulla versione 9,9.</block>
+  <block id="bd37abac39311a4e4bf00abc8bea791a" category="sidebar">Documentazione di Active IQ Unified Manager 9,9.</block>
+  <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">Note di rilascio</block>
+  <block id="828adfb3faf6bb0d6a86602f92d97f36" category="sidebar">Installare e configurare Unified Manager</block>
+  <block id="e53d36a21edd215027333eb7ea60fbc1" category="sidebar">Installazione e aggiornamento su sistemi VMware vSphere</block>
+  <block id="e16bdcc955b9441255836a75b797d710" category="sidebar">Installazione e aggiornamento su sistemi Linux</block>
+  <block id="5088a593884b9f5b6d52f0765c1c1554" category="sidebar">Installazione e aggiornamento su sistemi Windows</block>
+  <block id="40a3a0e70dc43e9efc5b6e90644739dd" category="sidebar">Configurare Unified Manager</block>
+  <block id="d8be01b779b72fb7ad353d45426e7fe3" category="sidebar">Monitoraggio delle performance</block>
+  <block id="eb7e776ba84f97e32ca2522829847d83" category="sidebar">Soglie di performance</block>
+  <block id="e4b3ba4cc2976d5d2c21b446db787620" category="sidebar">Performance del cluster</block>
+  <block id="13b1a36194bc49ac73c5077e1c1f6dd7" category="sidebar">Gruppo di criteri QoS</block>
+  <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">Più risorse</block>
+  <block id="aa193eacf5a35a85044e44de3fa9c91a" category="sidebar">Video di Unified Manager</block>
+  <block id="197833bfff97d501603036a0febb7a95" category="sidebar">Blog di Unified Manager</block>
+  <block id="c0fd3a67a0f9d526734eae8cf8142cb4" category="sidebar">Documentazione per la versione più recente di Active IQ Unified Manager</block>
 </blocks>
