@@ -53,7 +53,7 @@ Questo pannello visualizza il numero totale di carichi di lavoro conformi e non 
 
 * *Pannello di sicurezza*
 +
-Durante la visualizzazione di tutti i cluster, questo pannello visualizza il numero di cluster conformi e non conformi, il numero di VM di storage conformi e non conformi e il numero di volumi crittografati e non crittografati. La conformità si basa su http://www.netapp.com/us/media/tr-4569.pdf["Guida al rafforzamento della sicurezza di NetApp per ONTAP 9"]. Fare clic sulla freccia destra nella parte superiore del pannello per visualizzare i dettagli di sicurezza per tutti i cluster nella pagina Security (sicurezza).
+Durante la visualizzazione di tutti i cluster, questo pannello visualizza il numero di cluster conformi e non conformi, il numero di VM di storage conformi e non conformi e il numero di volumi crittografati e non crittografati. La conformità è basata su https://www.netapp.com/pdf.html?item=/media/10674-tr4569pdf.pdf["Guida al rafforzamento della sicurezza di NetApp per ONTAP 9"^]. Fare clic sulla freccia destra nella parte superiore del pannello per visualizzare i dettagli di sicurezza per tutti i cluster nella pagina Security (sicurezza).
 
 +
 Durante la visualizzazione di un singolo cluster, questo pannello visualizza se il cluster è conforme o meno, il numero di VM di storage conformi e non conformi e il numero di volumi crittografati e non crittografati. Fare clic sulla freccia destra nella parte superiore del pannello per visualizzare i dettagli di sicurezza del cluster nella pagina Security (sicurezza).

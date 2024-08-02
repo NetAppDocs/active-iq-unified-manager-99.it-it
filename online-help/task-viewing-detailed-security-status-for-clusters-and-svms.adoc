@@ -30,5 +30,5 @@ La pagina Security (sicurezza) visualizza le seguenti informazioni:
 ** i metodi di autenticazione del cluster utilizzati su ciascun cluster
 
 
-. Fare riferimento a. http://www.netapp.com/us/media/tr-4569.pdf["Guida al rafforzamento della sicurezza di NetApp per ONTAP 9"] Per istruzioni su come rendere tutti i cluster, le SVM e i volumi conformi alle raccomandazioni di sicurezza NetApp.
+. Fare riferimento alla https://www.netapp.com/pdf.html?item=/media/10674-tr4569pdf.pdf["Guida al rafforzamento della sicurezza di NetApp per ONTAP 9"^] per istruzioni su come rendere tutti cluster, SVM e volumi conformi alle raccomandazioni di sicurezza NetApp.
 
